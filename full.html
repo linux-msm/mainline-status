@@ -1,0 +1,8950 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1"><!-- Begin Jekyll SEO tag v2.8.0 -->
+<title>Qualcomm mainline status | Track the upstream status of Qualcomm platforms support</title>
+<meta name="generator" content="Jekyll v3.10.0" />
+<meta property="og:title" content="Qualcomm mainline status" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="Track the upstream status of Qualcomm platforms support" />
+<meta property="og:description" content="Track the upstream status of Qualcomm platforms support" />
+<link rel="canonical" href="/mainline-status/full.html" />
+<meta property="og:url" content="/mainline-status/full.html" />
+<meta property="og:site_name" content="Qualcomm mainline status" />
+<meta property="og:type" content="website" />
+<meta name="twitter:card" content="summary" />
+<meta property="twitter:title" content="Qualcomm mainline status" />
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"WebPage","description":"Track the upstream status of Qualcomm platforms support","headline":"Qualcomm mainline status","url":"/mainline-status/full.html"}</script>
+<!-- End Jekyll SEO tag -->
+<link rel="stylesheet" href="/mainline-status/assets/main.css"><link type="application/atom+xml" rel="alternate" href="/mainline-status/feed.xml" title="Qualcomm mainline status" /></head>
+<body><header class="site-header" role="banner">
+
+  <div class="wrapper"><a class="site-title" rel="author" href="/mainline-status/">Qualcomm mainline status</a><nav class="site-nav">
+        <input type="checkbox" id="nav-trigger" class="nav-trigger" />
+        <label for="nav-trigger">
+          <span class="menu-icon">
+            <svg viewBox="0 0 18 15" width="18px" height="15px">
+              <path d="M18,1.484c0,0.82-0.665,1.484-1.484,1.484H1.484C0.665,2.969,0,2.304,0,1.484l0,0C0,0.665,0.665,0,1.484,0 h15.032C17.335,0,18,0.665,18,1.484L18,1.484z M18,7.516C18,8.335,17.335,9,16.516,9H1.484C0.665,9,0,8.335,0,7.516l0,0 c0-0.82,0.665-1.484,1.484-1.484h15.032C17.335,6.031,18,6.696,18,7.516L18,7.516z M18,13.516C18,14.335,17.335,15,16.516,15H1.484 C0.665,15,0,14.335,0,13.516l0,0c0-0.82,0.665-1.483,1.484-1.483h15.032C17.335,12.031,18,12.695,18,13.516L18,13.516z"/>
+            </svg>
+          </span>
+        </label>
+
+        <div class="trigger"></div>
+      </nav></div>
+</header>
+<main class="page-content" aria-label="Content">
+      <div class="wrapper">
+        <div class="home"><div>
+<h2>SoC status</h2>
+<p>This table contains full set of the features supported for each SoC.</p>
+<table>
+<thead>
+
+
+<tr>
+<th rowspan="2">Platform</th>
+<th colspan="3">Clocks</th>
+<th rowspan="2">Pinctrl</th>
+<th rowspan="2">Interconnects</th>
+<th rowspan="2">UART</th>
+<th rowspan="2">SPMI</th>
+<th rowspan="2">I2C</th>
+<th rowspan="2">SPI</th>
+<th rowspan="2">PCIe</th>
+<th rowspan="2">SMMU</th>
+<th colspan="6">Storage</th>
+<th colspan="8">CPU</th>
+<th colspan="5">Remoteproc</th>
+<th colspan="4">Connectivity</th>
+<th rowspan="2">GNSS (GPS)</th>
+<th colspan="11">Audio</th>
+<th colspan="5">USB</th>
+<th colspan="7">Display</th>
+<th colspan="7">Camera</th>
+<th colspan="1">Video</th>
+<th rowspan="2">Watchdog</th>
+<th colspan="2">Crypto</th>
+<th colspan="2">DMA</th>
+<th rowspan="2">QFPROM</th>
+<th colspan="6">Power/Thermal</th>
+<th colspan="2">SRAM</th>
+<th colspan="3">Debug</th>
+<th rowspan="2">Platform</th>
+</tr>
+<tr>
+<th>GCC</th>
+<th>RPM(h)CC</th>
+<th>TCSRCC</th>
+<th>NAND</th>
+<th>SATA</th>
+<th>UFS</th>
+<th>UFS ICE</th>
+<th>SD/eMMC</th>
+<th>eMMC ICE</th>
+<th>CPUfreq (DVFS)</th>
+<th>CPUidle</th>
+<th>Cache Topology</th>
+<th>L3 Cache Controller</th>
+<th>SMP</th>
+<th>LLCC Scaling</th>
+<th>DDRfreq</th>
+<th>bwmon(s)</th>
+<th>ADSP</th>
+<th>CDSP</th>
+<th>SDSP/SLPI</th>
+<th>MDSP</th>
+<th>FastRPC/compute</th>
+<th>Bluetooth</th>
+<th>WLAN</th>
+<th>IPA</th>
+<th>Ethernet</th>
+<th>Headset Buttons</th>
+<th>Analog Codec</th>
+<th>LPASS Digital Codecs</th>
+<th>DMIC</th>
+<th>I2S</th>
+<th>SPDIF</th>
+<th>Soundwire</th>
+<th>SlimBus</th>
+<th>LPASS LPI pinctrl</th>
+<th>ADSP (Elite)</th>
+<th>ADSP (AudioReach)</th>
+<th>Host Mode</th>
+<th>Peripheral Mode</th>
+<th>USB OTG</th>
+<th>USB Type-C</th>
+<th>USB4</th>
+<th>DSI</th>
+<th>HDMI</th>
+<th>HDMI Audio</th>
+<th>HDMI CEC</th>
+<th>LVDS</th>
+<th>DisplayPort</th>
+<th>GPU</th>
+<th>CSI</th>
+<th>Data Path</th>
+<th>I2C CCI</th>
+<th>VFE</th>
+<th>VFE Lite</th>
+<th>SFE</th>
+<th>EVA</th>
+<th>Venus</th>
+<th>QCrypto</th>
+<th>RNG</th>
+<th>GPI</th>
+<th>BAM</th>
+<th>current-limit</th>
+<th>MPM</th>
+<th>PDC</th>
+<th>SPM</th>
+<th>tsens</th>
+<th>LMH</th>
+<th>RPM(h) stats</th>
+<th>IMEM</th>
+<th>Coresight</th>
+<th>DCC</th>
+<th>EUD</th>
+</tr>
+
+</thead>
+<tbody>
+
+<tr>
+<td><a href="/mainline-status/soc/agatti">Agatti</a>
+	<span class="tooltip">(*)<span class="tooltiptext">QCM2290, QRB2210</span></span></td>
+
+
+<td class="status-Y">6.4</td>
+
+<td class="status-Y">6.4</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-Y">6.4</td>
+
+<td class="status-Y">6.8</td>
+
+<td class="status-Y">6.4</td>
+
+<td class="status-Y">6.4</td>
+
+<td class="status-Y">6.4</td>
+
+<td class="status-Y">6.4</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-Y">6.4</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-Y">6.4</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-Y">6.4</td>
+
+<td class="status-Y">6.5</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-Y">6.4</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-Y">6.4</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-Y">6.4</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-Y">6.15</td>
+
+<td class="status-Y">6.4</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-Y">6.19</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-Y">6.17</td>
+
+<td class="status-Y">6.9</td>
+
+<td class="status-Y">6.4</td>
+
+<td class="status-Y">6.1</td>
+
+<td class="status-Y">6.1</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-Y">6.8</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-Y">6.1
+	<span class="tooltip">(*)<span class="tooltiptext">DT bits in 6.11</span></span></td>
+
+<td class="status-Y">6.17</td>
+
+<td class="status-Y">6.17</td>
+
+<td class="status-Y">6.17</td>
+
+<td class="status-Y">6.17</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-Y">6.18</td>
+
+<td class="status-Y">6.4</td>
+
+<td class="status-Y">6.17</td>
+
+<td class="status-Y">6.4</td>
+
+<td class="status-Y">6.4</td>
+
+<td class="status-unknown"></td>
+
+<td class="status-Y">6.4</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-Y">6.8</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-Y">6.4</td>
+
+<td class="status-Y">6.1</td>
+
+<td class="status-Y">6.4</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-unknown"></td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-unknown"></td>
+
+
+<td><a href="/mainline-status/soc/agatti">Agatti</a>
+	<span class="tooltip">(*)<span class="tooltiptext">QCM2290, QRB2210</span></span></td>
+</tr>
+
+<tr>
+<td><a href="/mainline-status/soc/apq8064">APQ8064</a></td>
+
+
+<td class="status-Y">3.16</td>
+
+<td class="status-Y">4.6</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-Y">3.18</td>
+
+<td class="status-N">N</td>
+
+<td class="status-Y">3.16
+	<span class="tooltip">(*)<span class="tooltiptext">HS uarts are not (yet) supported</span></span></td>
+
+<td class="status-Y">3.16
+	<span class="tooltip">(*)<span class="tooltiptext">This SoC uses SSBI to communicate with PMICs</span></span></td>
+
+<td class="status-Y">3.18</td>
+
+<td class="status-Y">4.6</td>
+
+<td class="status-Y">4.5</td>
+
+<td class="status-Y">4.1</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-Y">4.2</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-Y">3.18</td>
+
+<td class="status-unknown"></td>
+
+<td class="status-next">WIP</td>
+
+<td class="status-Y">4.1</td>
+
+<td class="status-unknown"></td>
+
+<td class="status-next">WIP</td>
+
+<td class="status-Y">3.16</td>
+
+<td class="status-Y">4.1</td>
+
+<td class="status-unknown"></td>
+
+<td class="status-unknown"></td>
+
+<td class="status-Y">4.7</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-Y">4.7</td>
+
+<td class="status-Y">4.7</td>
+
+<td class="status-unknown"></td>
+
+<td class="status-Y">4.11
+	<span class="tooltip">(*)<span class="tooltiptext">Could not verify it</span></span></td>
+
+<td class="status-Y">4.11
+	<span class="tooltip">(*)<span class="tooltiptext">Could not verify it</span></span></td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-unknown"></td>
+
+<td class="status-unknown"></td>
+
+<td class="status-unknown"></td>
+
+<td class="status-unknown"></td>
+
+<td class="status-unknown"></td>
+
+<td class="status-unknown"></td>
+
+<td class="status-unknown"></td>
+
+<td class="status-unknown"></td>
+
+<td class="status-unknown"></td>
+
+<td class="status-unknown"></td>
+
+<td class="status-unknown"></td>
+
+<td class="status-unknown"></td>
+
+<td class="status-Y">4.2</td>
+
+<td class="status-Y">4.2</td>
+
+<td class="status-Y">4.2</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-Y">4.1</td>
+
+<td class="status-Y">4.1</td>
+
+<td class="status-unknown"></td>
+
+<td class="status-unknown"></td>
+
+<td class="status-Y">4.1</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-Y">4.1</td>
+
+<td class="status-unknown"></td>
+
+<td class="status-unknown"></td>
+
+<td class="status-unknown"></td>
+
+<td class="status-unknown"></td>
+
+<td class="status-unknown"></td>
+
+<td class="status-unknown"></td>
+
+<td class="status-unknown"></td>
+
+<td class="status-unknown"></td>
+
+<td class="status-Y">3.19</td>
+
+<td class="status-unknown"></td>
+
+<td class="status-Y">4.5</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-Y">3.18</td>
+
+<td class="status-Y">4.9</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-unknown"></td>
+
+<td class="status-unknown"></td>
+
+<td class="status-Y">3.16</td>
+
+<td class="status-Y">4.9</td>
+
+<td class="status-unknown"></td>
+
+<td class="status-unknown"></td>
+
+<td class="status-unknown"></td>
+
+<td class="status-Y">4.11</td>
+
+<td class="status-unknown"></td>
+
+<td class="status-NA">N/A</td>
+
+
+<td><a href="/mainline-status/soc/apq8064">APQ8064</a></td>
+</tr>
+
+<tr>
+<td><a href="/mainline-status/soc/hamoa">Hamoa</a>
+	<span class="tooltip">(*)<span class="tooltiptext">X1E80100, X1E78100, X1E001DE</span></span></td>
+
+
+<td class="status-Y">6.8</td>
+
+<td class="status-Y">6.8</td>
+
+<td class="status-Y">6.9</td>
+
+<td class="status-Y">6.8</td>
+
+<td class="status-Y">6.8</td>
+
+<td class="status-Y">6.8</td>
+
+<td class="status-Y">6.10</td>
+
+<td class="status-Y">6.8</td>
+
+<td class="status-Y">6.8</td>
+
+<td class="status-Y">6.9</td>
+
+<td class="status-Y">6.8</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-next">WIP</td>
+
+<td class="status-N">N</td>
+
+<td class="status-Y">6.14</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-next">WIP</td>
+
+<td class="status-Y">6.8</td>
+
+<td class="status-unknown"></td>
+
+<td class="status-unknown"></td>
+
+<td class="status-Y">6.8</td>
+
+<td class="status-Y">6.8</td>
+
+<td class="status-unknown"></td>
+
+<td class="status-N">N</td>
+
+<td class="status-Y">6.9</td>
+
+<td class="status-Y">6.9</td>
+
+<td class="status-N">N</td>
+
+<td class="status-N">N</td>
+
+<td class="status-Y">6.10</td>
+
+<td class="status-next">WIP</td>
+
+<td class="status-next">WIP</td>
+
+<td class="status-N">N</td>
+
+<td class="status-unknown"></td>
+
+<td class="status-unknown"></td>
+
+<td class="status-Y">6.11</td>
+
+<td class="status-Y">6.11</td>
+
+<td class="status-Y">6.9</td>
+
+<td class="status-Y">6.11</td>
+
+<td class="status-unknown"></td>
+
+<td class="status-unknown"></td>
+
+<td class="status-Y">6.9</td>
+
+<td class="status-unknown"></td>
+
+<td class="status-Y">6.9</td>
+
+<td class="status-unknown"></td>
+
+<td class="status-Y">6.11</td>
+
+<td class="status-Y">6.9</td>
+
+<td class="status-Y">6.9</td>
+
+<td class="status-Y">6.11</td>
+
+<td class="status-Y">6.11</td>
+
+<td class="status-unknown"></td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-Y">6.10</td>
+
+<td class="status-Y">6.1
+	<span class="tooltip">(*)<span class="tooltiptext">DT bits in 6.11</span></span></td>
+
+<td class="status-unknown"></td>
+
+<td class="status-unknown"></td>
+
+<td class="status-unknown"></td>
+
+<td class="status-unknown"></td>
+
+<td class="status-unknown"></td>
+
+<td class="status-unknown"></td>
+
+<td class="status-unknown"></td>
+
+<td class="status-N">N</td>
+
+<td class="status-Y">6.15</td>
+
+<td class="status-N">N</td>
+
+<td class="status-N">N</td>
+
+<td class="status-Y">6.8</td>
+
+<td class="status-N">N</td>
+
+<td class="status-unknown"></td>
+
+<td class="status-unknown"></td>
+
+<td class="status-unknown"></td>
+
+<td class="status-unknown"></td>
+
+<td class="status-unknown"></td>
+
+<td class="status-Y">6.11</td>
+
+<td class="status-unknown"></td>
+
+<td class="status-Y">6.12</td>
+
+<td class="status-unknown"></td>
+
+<td class="status-Y">6.14</td>
+
+<td class="status-unknown"></td>
+
+<td class="status-unknown"></td>
+
+
+<td><a href="/mainline-status/soc/hamoa">Hamoa</a>
+	<span class="tooltip">(*)<span class="tooltiptext">X1E80100, X1E78100, X1E001DE</span></span></td>
+</tr>
+
+<tr>
+<td><a href="/mainline-status/soc/kamorta">Kamorta</a>
+	<span class="tooltip">(*)<span class="tooltiptext">SM6115, QRB4210</span></span></td>
+
+
+<td class="status-Y">6.2</td>
+
+<td class="status-Y">6.2</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-Y">6.2</td>
+
+<td class="status-Y">6.8</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-Y">6.2</td>
+
+<td class="status-Y">6.2</td>
+
+<td class="status-Y">6.2</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-Y">6.2</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-Y">6.2</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-Y">6.2</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-Y">6.2</td>
+
+<td class="status-Y">6.5</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-Y">6.2</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-Y">6.4</td>
+
+<td class="status-Y">6.4</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-Y">6.4</td>
+
+<td class="status-Y">6.4</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-Y">6.2</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-Y">6.14</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-Y">6.2</td>
+
+<td class="status-Y">6.9</td>
+
+<td class="status-Y">6.9</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-Y">6.2</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-Y">6.6</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-Y">6.3</td>
+
+<td class="status-Y">6.5</td>
+
+<td class="status-Y">6.2</td>
+
+<td class="status-Y">6.2</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-Y">6.2</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-Y">6.2</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-Y">6.3</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-NA">N/A</td>
+
+
+<td><a href="/mainline-status/soc/kamorta">Kamorta</a>
+	<span class="tooltip">(*)<span class="tooltiptext">SM6115, QRB4210</span></span></td>
+</tr>
+
+<tr>
+<td><a href="/mainline-status/soc/kodiak">Kodiak</a>
+	<span class="tooltip">(*)<span class="tooltiptext">SC7280, SM7325, QCM6490, QCS6490</span></span></td>
+
+
+<td class="status-Y">5.13</td>
+
+<td class="status-Y">5.13</td>
+
+<td class="status-unknown"></td>
+
+<td class="status-Y">5.13</td>
+
+<td class="status-Y">5.14</td>
+
+<td class="status-Y">5.13</td>
+
+<td class="status-Y">5.13</td>
+
+<td class="status-Y">5.16</td>
+
+<td class="status-Y">5.16</td>
+
+<td class="status-Y">5.16</td>
+
+<td class="status-Y">5.13</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-Y">6.8</td>
+
+<td class="status-Y">6.1</td>
+
+<td class="status-Y">5.15</td>
+
+<td class="status-unknown"></td>
+
+<td class="status-Y">5.14</td>
+
+<td class="status-Y">5.13</td>
+
+<td class="status-unknown"></td>
+
+<td class="status-unknown"></td>
+
+<td class="status-Y">5.13</td>
+
+<td class="status-Y">5.13</td>
+
+<td class="status-Y">5.18</td>
+
+<td class="status-Y">6.1</td>
+
+<td class="status-Y">6.8</td>
+
+<td class="status-Y">6.8</td>
+
+<td class="status-unknown"></td>
+
+<td class="status-Y">5.16</td>
+
+<td class="status-Y">6.8</td>
+
+<td class="status-unknown"></td>
+
+<td class="status-Y">5.19</td>
+
+<td class="status-Y">5.15</td>
+
+<td class="status-unknown"></td>
+
+<td class="status-unknown"></td>
+
+<td class="status-unknown"></td>
+
+<td class="status-unknown"></td>
+
+<td class="status-Y">5.19</td>
+
+<td class="status-Y">6.1</td>
+
+<td class="status-unknown"></td>
+
+<td class="status-unknown"></td>
+
+<td class="status-Y">6.1</td>
+
+<td class="status-Y">6.9</td>
+
+<td class="status-Y">6.0</td>
+
+<td class="status-unknown"></td>
+
+<td class="status-Y">6.18</td>
+
+<td class="status-unknown"></td>
+
+<td class="status-Y">5.15</td>
+
+<td class="status-Y">6.9</td>
+
+<td class="status-Y">6.9</td>
+
+<td class="status-unknown"></td>
+
+<td class="status-Y">5.18</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-Y">5.18</td>
+
+<td class="status-Y">5.16</td>
+
+<td class="status-Y">6.14</td>
+
+<td class="status-Y">6.14</td>
+
+<td class="status-Y">6.7</td>
+
+<td class="status-Y">6.14</td>
+
+<td class="status-Y">6.14</td>
+
+<td class="status-Y">6.14</td>
+
+<td class="status-N">N</td>
+
+<td class="status-Y">5.17</td>
+
+<td class="status-Y">5.13</td>
+
+<td class="status-unknown"></td>
+
+<td class="status-Y">6.8</td>
+
+<td class="status-Y">5.19</td>
+
+<td class="status-unknown"></td>
+
+<td class="status-Y">5.15</td>
+
+<td class="status-unknown"></td>
+
+<td class="status-unknown"></td>
+
+<td class="status-Y">5.13</td>
+
+<td class="status-unknown"></td>
+
+<td class="status-Y">5.14</td>
+
+<td class="status-Y">6.7</td>
+
+<td class="status-Y">5.16</td>
+
+<td class="status-Y">5.16</td>
+
+<td class="status-Y">5.13</td>
+
+<td class="status-Y">6.3</td>
+
+<td class="status-Y">5.19</td>
+
+
+<td><a href="/mainline-status/soc/kodiak">Kodiak</a>
+	<span class="tooltip">(*)<span class="tooltiptext">SC7280, SM7325, QCM6490, QCS6490</span></span></td>
+</tr>
+
+<tr>
+<td><a href="/mainline-status/soc/lemans">Lemans</a>
+	<span class="tooltip">(*)<span class="tooltiptext">SA8775P, QCS9100, QCS9075</span></span></td>
+
+
+<td class="status-Y">6.3</td>
+
+<td class="status-Y">6.3</td>
+
+<td class="status-unknown"></td>
+
+<td class="status-Y">6.3</td>
+
+<td class="status-Y">6.3</td>
+
+<td class="status-Y">6.4</td>
+
+<td class="status-Y">6.4</td>
+
+<td class="status-Y">6.4</td>
+
+<td class="status-Y">6.4</td>
+
+<td class="status-Y">6.6</td>
+
+<td class="status-Y">6.4</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-Y">6.5</td>
+
+<td class="status-Y">6.7</td>
+
+<td class="status-Y">6.18</td>
+
+<td class="status-unknown"></td>
+
+<td class="status-Y">6.4</td>
+
+<td class="status-Y">6.12</td>
+
+<td class="status-unknown"></td>
+
+<td class="status-Y">6.4</td>
+
+<td class="status-Y">6.4</td>
+
+<td class="status-Y">6.11</td>
+
+<td class="status-unknown"></td>
+
+<td class="status-Y">6.12</td>
+
+<td class="status-Y">6.12</td>
+
+<td class="status-Y">6.12</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-Y">6.12</td>
+
+<td class="status-Y">6.13</td>
+
+<td class="status-Y">6.13</td>
+
+<td class="status-N">N</td>
+
+<td class="status-Y">6.6</td>
+
+<td class="status-N">N</td>
+
+<td class="status-N">N</td>
+
+<td class="status-N">N</td>
+
+<td class="status-N">N</td>
+
+<td class="status-N">N</td>
+
+<td class="status-unknown"></td>
+
+<td class="status-N">N</td>
+
+<td class="status-N">N</td>
+
+<td class="status-unknown"></td>
+
+<td class="status-N">N</td>
+
+<td class="status-unknown"></td>
+
+<td class="status-N">N</td>
+
+<td class="status-Y">6.5</td>
+
+<td class="status-Y">6.5</td>
+
+<td class="status-unknown"></td>
+
+<td class="status-unknown"></td>
+
+<td class="status-unknown"></td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-Y">6.13
+	<span class="tooltip">(*)<span class="tooltiptext">DT bits in 6.14</span></span></td>
+
+<td class="status-Y">6.13
+	<span class="tooltip">(*)<span class="tooltiptext">DT bits in 6.14</span></span></td>
+
+<td class="status-Y">6.18</td>
+
+<td class="status-Y">6.18</td>
+
+<td class="status-Y">6.18</td>
+
+<td class="status-Y">6.18</td>
+
+<td class="status-Y">6.18</td>
+
+<td class="status-N">N</td>
+
+<td class="status-N">N</td>
+
+<td class="status-N">N</td>
+
+<td class="status-Y">6.5</td>
+
+<td class="status-Y">DT bits removed for 6.16</td>
+
+<td class="status-Y">6.8</td>
+
+<td class="status-Y">6.13</td>
+
+<td class="status-Y">6.13</td>
+
+<td class="status-unknown"></td>
+
+<td class="status-N">N</td>
+
+<td class="status-N">N</td>
+
+<td class="status-N">N</td>
+
+<td class="status-N">N</td>
+
+<td class="status-Y">6.8</td>
+
+<td class="status-next">next-6.16</td>
+
+<td class="status-Y">6.8</td>
+
+<td class="status-Y">6.11</td>
+
+<td class="status-Y">6.11</td>
+
+<td class="status-unknown"></td>
+
+<td class="status-unknown"></td>
+
+
+<td><a href="/mainline-status/soc/lemans">Lemans</a>
+	<span class="tooltip">(*)<span class="tooltiptext">SA8775P, QCS9100, QCS9075</span></span></td>
+</tr>
+
+<tr>
+<td><a href="/mainline-status/soc/monaco">Monaco</a>
+	<span class="tooltip">(*)<span class="tooltiptext">QCS8300, QCS8275</span></span></td>
+
+
+<td class="status-Y">6.14</td>
+
+<td class="status-Y">6.14</td>
+
+<td class="status-unknown"></td>
+
+<td class="status-Y">6.14</td>
+
+<td class="status-Y">6.14</td>
+
+<td class="status-unknown"></td>
+
+<td class="status-Y">6.16</td>
+
+<td class="status-unknown"></td>
+
+<td class="status-unknown"></td>
+
+<td class="status-unknown"></td>
+
+<td class="status-Y">6.14</td>
+
+<td class="status-unknown"></td>
+
+<td class="status-unknown"></td>
+
+<td class="status-Y">6.14</td>
+
+<td class="status-Y">6.14</td>
+
+<td class="status-unknown"></td>
+
+<td class="status-unknown"></td>
+
+<td class="status-unknown"></td>
+
+<td class="status-Y">6.14</td>
+
+<td class="status-Y">6.14</td>
+
+<td class="status-Y">6.14</td>
+
+<td class="status-unknown"></td>
+
+<td class="status-Y">6.14</td>
+
+<td class="status-unknown"></td>
+
+<td class="status-Y">6.14</td>
+
+<td class="status-Y">6.14</td>
+
+<td class="status-Y">6.14</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-Y">6.14</td>
+
+<td class="status-unknown"></td>
+
+<td class="status-unknown"></td>
+
+<td class="status-unknown"></td>
+
+<td class="status-Y">6.14</td>
+
+<td class="status-unknown"></td>
+
+<td class="status-unknown"></td>
+
+<td class="status-unknown"></td>
+
+<td class="status-unknown"></td>
+
+<td class="status-unknown"></td>
+
+<td class="status-unknown"></td>
+
+<td class="status-unknown"></td>
+
+<td class="status-unknown"></td>
+
+<td class="status-unknown"></td>
+
+<td class="status-unknown"></td>
+
+<td class="status-unknown"></td>
+
+<td class="status-unknown"></td>
+
+<td class="status-unknown"></td>
+
+<td class="status-Y">6.14</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-unknown"></td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-unknown"></td>
+
+<td class="status-unknown"></td>
+
+<td class="status-unknown"></td>
+
+<td class="status-unknown"></td>
+
+<td class="status-unknown"></td>
+
+<td class="status-unknown"></td>
+
+<td class="status-unknown"></td>
+
+<td class="status-unknown"></td>
+
+<td class="status-unknown"></td>
+
+<td class="status-Y">6.16
+	<span class="tooltip">(*)<span class="tooltiptext">IRIS Driver</span></span></td>
+
+<td class="status-Y">6.14</td>
+
+<td class="status-Y">DT bits removed for 6.16</td>
+
+<td class="status-Y">6.14</td>
+
+<td class="status-unknown"></td>
+
+<td class="status-unknown"></td>
+
+<td class="status-Y">6.14</td>
+
+<td class="status-unknown"></td>
+
+<td class="status-unknown"></td>
+
+<td class="status-Y">6.14</td>
+
+<td class="status-unknown"></td>
+
+<td class="status-unknown"></td>
+
+<td class="status-unknown"></td>
+
+<td class="status-Y">6.16</td>
+
+<td class="status-Y">6.14</td>
+
+<td class="status-Y">6.14</td>
+
+<td class="status-unknown"></td>
+
+<td class="status-unknown"></td>
+
+
+<td><a href="/mainline-status/soc/monaco">Monaco</a>
+	<span class="tooltip">(*)<span class="tooltiptext">QCS8300, QCS8275</span></span></td>
+</tr>
+
+<tr>
+<td><a href="/mainline-status/soc/msm8226">MSM8226</a></td>
+
+
+<td class="status-Y">5.15</td>
+
+<td class="status-Y">6.3</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-Y">5.15</td>
+
+<td class="status-N">N</td>
+
+<td class="status-Y">5.15</td>
+
+<td class="status-Y">5.16</td>
+
+<td class="status-Y">5.16</td>
+
+<td class="status-unknown"></td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-N">N</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-Y">5.16</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-Y">6.12</td>
+
+<td class="status-unknown"></td>
+
+<td class="status-unknown"></td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-Y">6.9</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-unknown"></td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-Y">6.1</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-Y">6.16</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-next">WIP</td>
+
+<td class="status-next">WIP</td>
+
+<td class="status-Y">6.16</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-unknown"></td>
+
+<td class="status-unknown"></td>
+
+<td class="status-unknown"></td>
+
+<td class="status-unknown"></td>
+
+<td class="status-unknown"></td>
+
+<td class="status-unknown"></td>
+
+<td class="status-unknown"></td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-unknown"></td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-unknown"></td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-Y">5.18</td>
+
+<td class="status-Y">5.18</td>
+
+<td class="status-unknown"></td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-Y">6.6</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-Y">6.8</td>
+
+<td class="status-unknown"></td>
+
+<td class="status-unknown"></td>
+
+<td class="status-Y">6.2</td>
+
+<td class="status-unknown"></td>
+
+<td class="status-unknown"></td>
+
+<td class="status-unknown"></td>
+
+<td class="status-unknown"></td>
+
+<td class="status-unknown"></td>
+
+<td class="status-Y">6.9</td>
+
+<td class="status-unknown"></td>
+
+<td class="status-Y">5.15</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-unknown"></td>
+
+<td class="status-Y">6.5</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-unknown"></td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-unknown"></td>
+
+<td class="status-Y">6.5</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-Y">6.5</td>
+
+<td class="status-Y">6.5</td>
+
+<td class="status-unknown"></td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-NA">N/A</td>
+
+
+<td><a href="/mainline-status/soc/msm8226">MSM8226</a></td>
+</tr>
+
+<tr>
+<td><a href="/mainline-status/soc/msm8916">MSM8916</a></td>
+
+
+<td class="status-Y">4.1</td>
+
+<td class="status-Y">4.6</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-Y">4.1</td>
+
+<td class="status-Y">5.9</td>
+
+<td class="status-Y">4.1</td>
+
+<td class="status-Y">4.2</td>
+
+<td class="status-Y">4.3</td>
+
+<td class="status-Y">4.3</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-Y">4.14</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-Y">4.3</td>
+
+<td class="status-unknown"></td>
+
+<td class="status-Y">4.17</td>
+
+<td class="status-Y">4.8</td>
+
+<td class="status-unknown"></td>
+
+<td class="status-Y">4.6</td>
+
+<td class="status-Y">4.8</td>
+
+<td class="status-unknown"></td>
+
+<td class="status-unknown"></td>
+
+<td class="status-unknown"></td>
+
+<td class="status-unknown"></td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-Y">4.1</td>
+
+<td class="status-Y">5.7</td>
+
+<td class="status-Y">4.11</td>
+
+<td class="status-Y">4.11</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-unknown"></td>
+
+<td class="status-unknown"></td>
+
+<td class="status-unknown"></td>
+
+<td class="status-Y">4.1</td>
+
+<td class="status-unknown"></td>
+
+<td class="status-unknown"></td>
+
+<td class="status-unknown"></td>
+
+<td class="status-unknown"></td>
+
+<td class="status-unknown"></td>
+
+<td class="status-Y">4.6</td>
+
+<td class="status-unknown"></td>
+
+<td class="status-unknown"></td>
+
+<td class="status-Y">4.3</td>
+
+<td class="status-Y">4.3</td>
+
+<td class="status-Y">4.3</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-Y">4.9</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-Y">4.14</td>
+
+<td class="status-Y">5.0</td>
+
+<td class="status-unknown"></td>
+
+<td class="status-Y">5.8</td>
+
+<td class="status-Y">5.0</td>
+
+<td class="status-unknown"></td>
+
+<td class="status-unknown"></td>
+
+<td class="status-unknown"></td>
+
+<td class="status-Y">4.14</td>
+
+<td class="status-unknown"></td>
+
+<td class="status-unknown"></td>
+
+<td class="status-Y">4.4</td>
+
+<td class="status-unknown"></td>
+
+<td class="status-Y">4.3</td>
+
+<td class="status-Y">4.9</td>
+
+<td class="status-unknown"></td>
+
+<td class="status-unknown"></td>
+
+<td class="status-unknown"></td>
+
+<td class="status-Y">5.16</td>
+
+<td class="status-Y">4.9</td>
+
+<td class="status-unknown"></td>
+
+<td class="status-Y">5.17</td>
+
+<td class="status-unknown"></td>
+
+<td class="status-Y">4.11</td>
+
+<td class="status-unknown"></td>
+
+<td class="status-unknown"></td>
+
+
+<td><a href="/mainline-status/soc/msm8916">MSM8916</a></td>
+</tr>
+
+<tr>
+<td><a href="/mainline-status/soc/msm8939">MSM8939</a></td>
+
+
+<td class="status-Y">5.12</td>
+
+<td class="status-Y">5.11</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-Y">5.9</td>
+
+<td class="status-Y">5.12</td>
+
+<td class="status-Y">4.1</td>
+
+<td class="status-Y">4.2</td>
+
+<td class="status-Y">4.3</td>
+
+<td class="status-Y">4.3</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-Y">4.14</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-Y">4.3</td>
+
+<td class="status-unknown"></td>
+
+<td class="status-next">WIP</td>
+
+<td class="status-N">N</td>
+
+<td class="status-unknown"></td>
+
+<td class="status-Y">4.6</td>
+
+<td class="status-next">WIP
+	<span class="tooltip">(*)<span class="tooltiptext">Using <a href="https://github.com/msm8916-mainline/lk2nd/releases/tag/0.14.0">lk2nd</a> as a bootloader is required to enable SMP</span></span></td>
+
+<td class="status-unknown"></td>
+
+<td class="status-unknown"></td>
+
+<td class="status-unknown"></td>
+
+<td class="status-unknown"></td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-Y">4.1</td>
+
+<td class="status-Y">5.7</td>
+
+<td class="status-Y">4.1</td>
+
+<td class="status-Y">4.11</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-unknown"></td>
+
+<td class="status-unknown"></td>
+
+<td class="status-unknown"></td>
+
+<td class="status-Y">4.1</td>
+
+<td class="status-unknown"></td>
+
+<td class="status-unknown"></td>
+
+<td class="status-unknown"></td>
+
+<td class="status-unknown"></td>
+
+<td class="status-unknown"></td>
+
+<td class="status-Y">4.6</td>
+
+<td class="status-unknown"></td>
+
+<td class="status-unknown"></td>
+
+<td class="status-Y">4.3</td>
+
+<td class="status-Y">4.3</td>
+
+<td class="status-Y">4.3</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-Y">4.9</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-Y">4.14</td>
+
+<td class="status-unknown"></td>
+
+<td class="status-unknown"></td>
+
+<td class="status-unknown"></td>
+
+<td class="status-unknown"></td>
+
+<td class="status-unknown"></td>
+
+<td class="status-unknown"></td>
+
+<td class="status-unknown"></td>
+
+<td class="status-next">WIP</td>
+
+<td class="status-unknown"></td>
+
+<td class="status-unknown"></td>
+
+<td class="status-Y">4.4</td>
+
+<td class="status-unknown"></td>
+
+<td class="status-Y">4.3</td>
+
+<td class="status-Y">4.9</td>
+
+<td class="status-unknown"></td>
+
+<td class="status-unknown"></td>
+
+<td class="status-unknown"></td>
+
+<td class="status-Y">5.16</td>
+
+<td class="status-Y">4.9</td>
+
+<td class="status-unknown"></td>
+
+<td class="status-Y">5.17</td>
+
+<td class="status-unknown"></td>
+
+<td class="status-Y">4.11</td>
+
+<td class="status-unknown"></td>
+
+<td class="status-unknown"></td>
+
+
+<td><a href="/mainline-status/soc/msm8939">MSM8939</a></td>
+</tr>
+
+<tr>
+<td><a href="/mainline-status/soc/msm8953">MSM8953</a></td>
+
+
+<td class="status-Y">5.15
+	<span class="tooltip">(*)<span class="tooltiptext">DT bits in 5.18</span></span></td>
+
+<td class="status-Y">5.15
+	<span class="tooltip">(*)<span class="tooltiptext">DT bits in 5.18</span></span></td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-Y">5.11
+	<span class="tooltip">(*)<span class="tooltiptext">DT bits in 5.18</span></span></td>
+
+<td class="status-Y">6.11
+	<span class="tooltip">(*)<span class="tooltiptext">DT bits in 6.16</span></span></td>
+
+<td class="status-Y">5.18</td>
+
+<td class="status-Y">5.18</td>
+
+<td class="status-Y">5.18</td>
+
+<td class="status-Y">6.8</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-Y">6.2</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-Y">5.18</td>
+
+<td class="status-unknown"></td>
+
+<td class="status-N">N</td>
+
+<td class="status-N">N</td>
+
+<td class="status-Y">5.18</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-Y">5.18</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-unknown"></td>
+
+<td class="status-unknown"></td>
+
+<td class="status-Y">6.4</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-Y">6.4</td>
+
+<td class="status-N">N</td>
+
+<td class="status-Y">6.4</td>
+
+<td class="status-Y">6.4</td>
+
+<td class="status-unknown"></td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-unknown"></td>
+
+<td class="status-unknown"></td>
+
+<td class="status-unknown"></td>
+
+<td class="status-unknown"></td>
+
+<td class="status-unknown"></td>
+
+<td class="status-unknown"></td>
+
+<td class="status-unknown"></td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-unknown"></td>
+
+<td class="status-unknown"></td>
+
+<td class="status-unknown"></td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-Y">5.18</td>
+
+<td class="status-Y">5.18</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-Y">6.2</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-Y">6.9</td>
+
+<td class="status-unknown"></td>
+
+<td class="status-unknown"></td>
+
+<td class="status-unknown"></td>
+
+<td class="status-unknown"></td>
+
+<td class="status-unknown"></td>
+
+<td class="status-unknown"></td>
+
+<td class="status-unknown"></td>
+
+<td class="status-unknown"></td>
+
+<td class="status-unknown"></td>
+
+<td class="status-unknown"></td>
+
+<td class="status-Y">5.18</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-N">N</td>
+
+<td class="status-unknown"></td>
+
+<td class="status-unknown"></td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-unknown"></td>
+
+<td class="status-Y">5.18</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-unknown"></td>
+
+<td class="status-unknown"></td>
+
+<td class="status-unknown"></td>
+
+<td class="status-NA">N/A</td>
+
+
+<td><a href="/mainline-status/soc/msm8953">MSM8953</a></td>
+</tr>
+
+<tr>
+<td><a href="/mainline-status/soc/msm8974">MSM8974</a></td>
+
+
+<td class="status-Y">3.14</td>
+
+<td class="status-Y">4.12</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-Y">3.16</td>
+
+<td class="status-Y">5.6</td>
+
+<td class="status-Y">3.14</td>
+
+<td class="status-Y">4.1</td>
+
+<td class="status-Y">3.18</td>
+
+<td class="status-unknown"></td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-N">N</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-Y">3.16</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-unknown"></td>
+
+<td class="status-Y">4.1</td>
+
+<td class="status-unknown"></td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-Y">3.15</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-Y">4.11</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-Y">5.6</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-Y">5.6</td>
+
+<td class="status-Y">5.6</td>
+
+<td class="status-Y">6.0</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-unknown"></td>
+
+<td class="status-unknown"></td>
+
+<td class="status-unknown"></td>
+
+<td class="status-unknown"></td>
+
+<td class="status-unknown"></td>
+
+<td class="status-unknown"></td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-unknown"></td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-unknown"></td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-Y">4.11</td>
+
+<td class="status-Y">4.11</td>
+
+<td class="status-Y">4.11</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-Y">5.3</td>
+
+<td class="status-unknown"></td>
+
+<td class="status-unknown"></td>
+
+<td class="status-unknown"></td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-Y">5.12</td>
+
+<td class="status-unknown"></td>
+
+<td class="status-unknown"></td>
+
+<td class="status-Y">6.2</td>
+
+<td class="status-unknown"></td>
+
+<td class="status-unknown"></td>
+
+<td class="status-unknown"></td>
+
+<td class="status-unknown"></td>
+
+<td class="status-unknown"></td>
+
+<td class="status-Y">6.8</td>
+
+<td class="status-unknown"></td>
+
+<td class="status-Y">3.15</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-Y">4.6</td>
+
+<td class="status-Y">4.9</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-unknown"></td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-unknown"></td>
+
+<td class="status-Y">4.9</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-Y">6.1</td>
+
+<td class="status-Y">5.5</td>
+
+<td class="status-Y">4.12</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-NA">N/A</td>
+
+
+<td><a href="/mainline-status/soc/msm8974">MSM8974</a></td>
+</tr>
+
+<tr>
+<td><a href="/mainline-status/soc/msm8996">MSM8996</a></td>
+
+
+<td class="status-Y">4.6</td>
+
+<td class="status-Y">4.15</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-Y">4.6</td>
+
+<td class="status-Y">6.0</td>
+
+<td class="status-Y">4.6</td>
+
+<td class="status-Y">4.6</td>
+
+<td class="status-Y">4.8</td>
+
+<td class="status-Y">4.8</td>
+
+<td class="status-Y">4.15</td>
+
+<td class="status-Y">4.21</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-Y">4.18</td>
+
+<td class="status-unknown"></td>
+
+<td class="status-Y">4.8</td>
+
+<td class="status-unknown"></td>
+
+<td class="status-Y">5.14
+	<span class="tooltip">(*)<span class="tooltiptext">Not really stable until 6.3</span></span></td>
+
+<td class="status-Y">5.3</td>
+
+<td class="status-unknown"></td>
+
+<td class="status-unknown"></td>
+
+<td class="status-Y">4.6
+	<span class="tooltip">(*)<span class="tooltiptext">Not really stable until 6.3</span></span></td>
+
+<td class="status-unknown"></td>
+
+<td class="status-unknown"></td>
+
+<td class="status-unknown"></td>
+
+<td class="status-Y">4.12</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-Y">5.19</td>
+
+<td class="status-Y">5.19</td>
+
+<td class="status-Y">6.11</td>
+
+<td class="status-Y">4.18</td>
+
+<td class="status-Y">4.18</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-unknown"></td>
+
+<td class="status-unknown"></td>
+
+<td class="status-unknown"></td>
+
+<td class="status-unknown"></td>
+
+<td class="status-unknown"></td>
+
+<td class="status-unknown"></td>
+
+<td class="status-unknown"></td>
+
+<td class="status-unknown"></td>
+
+<td class="status-Y">5.2</td>
+
+<td class="status-unknown"></td>
+
+<td class="status-unknown"></td>
+
+<td class="status-unknown"></td>
+
+<td class="status-Y">4.14</td>
+
+<td class="status-Y">4.14</td>
+
+<td class="status-unknown"></td>
+
+<td class="status-unknown"></td>
+
+<td class="status-unknown"></td>
+
+<td class="status-Y">5.14</td>
+
+<td class="status-Y">5.2</td>
+
+<td class="status-Y">5.2</td>
+
+<td class="status-unknown"></td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-Y">5.2</td>
+
+<td class="status-Y">4.21</td>
+
+<td class="status-unknown"></td>
+
+<td class="status-Y">5.8</td>
+
+<td class="status-Y">4.21</td>
+
+<td class="status-unknown"></td>
+
+<td class="status-unknown"></td>
+
+<td class="status-unknown"></td>
+
+<td class="status-Y">5.4</td>
+
+<td class="status-unknown"></td>
+
+<td class="status-Y">5.16</td>
+
+<td class="status-Y">4.21</td>
+
+<td class="status-unknown"></td>
+
+<td class="status-Y">5.2</td>
+
+<td class="status-Y">4.14</td>
+
+<td class="status-unknown"></td>
+
+<td class="status-unknown"></td>
+
+<td class="status-unknown"></td>
+
+<td class="status-Y">5.6
+	<span class="tooltip">(*)<span class="tooltiptext">Basic support for SAW3 / VDD APC</span></span></td>
+
+<td class="status-Y">4.8</td>
+
+<td class="status-unknown"></td>
+
+<td class="status-Y">5.16</td>
+
+<td class="status-unknown"></td>
+
+<td class="status-Y">5.4</td>
+
+<td class="status-unknown"></td>
+
+<td class="status-unknown"></td>
+
+
+<td><a href="/mainline-status/soc/msm8996">MSM8996</a></td>
+</tr>
+
+<tr>
+<td><a href="/mainline-status/soc/msm8998">MSM8998</a></td>
+
+
+<td class="status-Y">4.19</td>
+
+<td class="status-Y">5.0</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-Y">4.19</td>
+
+<td class="status-N">N</td>
+
+<td class="status-Y">4.19</td>
+
+<td class="status-Y">4.19</td>
+
+<td class="status-Y">4.8</td>
+
+<td class="status-Y">6.4</td>
+
+<td class="status-Y">5.2</td>
+
+<td class="status-Y">5.15</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-Y">5.1</td>
+
+<td class="status-unknown"></td>
+
+<td class="status-Y">4.2</td>
+
+<td class="status-unknown"></td>
+
+<td class="status-N">N</td>
+
+<td class="status-Y">5.2</td>
+
+<td class="status-unknown"></td>
+
+<td class="status-unknown"></td>
+
+<td class="status-Y">4.19</td>
+
+<td class="status-unknown"></td>
+
+<td class="status-unknown"></td>
+
+<td class="status-unknown"></td>
+
+<td class="status-Y">5.5</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-Y">5.5</td>
+
+<td class="status-Y">5.5</td>
+
+<td class="status-N">N</td>
+
+<td class="status-N">N</td>
+
+<td class="status-N">N</td>
+
+<td class="status-N">N</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-unknown"></td>
+
+<td class="status-unknown"></td>
+
+<td class="status-unknown"></td>
+
+<td class="status-unknown"></td>
+
+<td class="status-unknown"></td>
+
+<td class="status-unknown"></td>
+
+<td class="status-unknown"></td>
+
+<td class="status-unknown"></td>
+
+<td class="status-N">N</td>
+
+<td class="status-unknown"></td>
+
+<td class="status-unknown"></td>
+
+<td class="status-unknown"></td>
+
+<td class="status-Y">5.0</td>
+
+<td class="status-Y">5.0</td>
+
+<td class="status-unknown"></td>
+
+<td class="status-unknown"></td>
+
+<td class="status-unknown"></td>
+
+<td class="status-Y">6.5</td>
+
+<td class="status-Y">6.12
+	<span class="tooltip">(*)<span class="tooltiptext">DT bits in 6.13</span></span></td>
+
+<td class="status-N">N</td>
+
+<td class="status-unknown"></td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-N">N</td>
+
+<td class="status-Y">5.15</td>
+
+<td class="status-N">N</td>
+
+<td class="status-unknown"></td>
+
+<td class="status-N">N</td>
+
+<td class="status-N">N</td>
+
+<td class="status-unknown"></td>
+
+<td class="status-unknown"></td>
+
+<td class="status-unknown"></td>
+
+<td class="status-Y">6.11</td>
+
+<td class="status-unknown"></td>
+
+<td class="status-N">N</td>
+
+<td class="status-N">N</td>
+
+<td class="status-unknown"></td>
+
+<td class="status-Y">5.4</td>
+
+<td class="status-Y">4.19</td>
+
+<td class="status-unknown"></td>
+
+<td class="status-unknown"></td>
+
+<td class="status-unknown"></td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-Y">4.19</td>
+
+<td class="status-unknown"></td>
+
+<td class="status-Y">5.15</td>
+
+<td class="status-unknown"></td>
+
+<td class="status-Y">5.3</td>
+
+<td class="status-unknown"></td>
+
+<td class="status-unknown"></td>
+
+
+<td><a href="/mainline-status/soc/msm8998">MSM8998</a></td>
+</tr>
+
+<tr>
+<td><a href="/mainline-status/soc/qdu1000">QDU1000 / QRU1000</a></td>
+
+
+<td class="status-Y">6.3</td>
+
+<td class="status-Y">6.3</td>
+
+<td class="status-unknown"></td>
+
+<td class="status-Y">6.3</td>
+
+<td class="status-Y">6.3</td>
+
+<td class="status-Y">6.3</td>
+
+<td class="status-Y">6.3</td>
+
+<td class="status-Y">6.3</td>
+
+<td class="status-Y">6.3</td>
+
+<td class="status-unknown"></td>
+
+<td class="status-Y">6.3</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-Y">6.5</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-Y">6.3</td>
+
+<td class="status-Y">6.3</td>
+
+<td class="status-unknown"></td>
+
+<td class="status-unknown"></td>
+
+<td class="status-Y">6.3</td>
+
+<td class="status-next">WIP</td>
+
+<td class="status-unknown"></td>
+
+<td class="status-unknown"></td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-next">WIP</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-unknown"></td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-next">WIP</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-unknown"></td>
+
+<td class="status-unknown"></td>
+
+<td class="status-unknown"></td>
+
+<td class="status-Y">6.3</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-next">WIP</td>
+
+<td class="status-unknown"></td>
+
+<td class="status-unknown"></td>
+
+<td class="status-unknown"></td>
+
+<td class="status-unknown"></td>
+
+<td class="status-unknown"></td>
+
+<td class="status-unknown"></td>
+
+<td class="status-unknown"></td>
+
+<td class="status-Y">6.5</td>
+
+<td class="status-unknown"></td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-unknown"></td>
+
+
+<td><a href="/mainline-status/soc/qdu1000">QDU1000 / QRU1000</a></td>
+</tr>
+
+<tr>
+<td><a href="/mainline-status/soc/sar2130p">SAR2130P</a></td>
+
+
+<td class="status-Y">6.13
+	<span class="tooltip">(*)<span class="tooltiptext">DT bits in 6.14</span></span></td>
+
+<td class="status-Y">6.13
+	<span class="tooltip">(*)<span class="tooltiptext">DT bits in 6.14</span></span></td>
+
+<td class="status-Y">6.13
+	<span class="tooltip">(*)<span class="tooltiptext">DT bits in 6.14</span></span></td>
+
+<td class="status-Y">6.13
+	<span class="tooltip">(*)<span class="tooltiptext">DT bits in 6.14</span></span></td>
+
+<td class="status-Y">6.13
+	<span class="tooltip">(*)<span class="tooltiptext">DT bits in 6.14</span></span></td>
+
+<td class="status-Y">6.14</td>
+
+<td class="status-Y">6.13
+	<span class="tooltip">(*)<span class="tooltiptext">DT bits in 6.14</span></span></td>
+
+<td class="status-Y">6.14</td>
+
+<td class="status-Y">6.14</td>
+
+<td class="status-Y">6.14
+	<span class="tooltip">(*)<span class="tooltiptext">EP in 6.16</span></span></td>
+
+<td class="status-Y">6.13
+	<span class="tooltip">(*)<span class="tooltiptext">DT bits in 6.14</span></span></td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-Y">6.13
+	<span class="tooltip">(*)<span class="tooltiptext">DT bits in 6.14</span></span></td>
+
+<td class="status-unknown"></td>
+
+<td class="status-Y">6.13
+	<span class="tooltip">(*)<span class="tooltiptext">DT bits in 6.14</span></span></td>
+
+<td class="status-Y">6.14</td>
+
+<td class="status-Y">6.14</td>
+
+<td class="status-Y">6.14</td>
+
+<td class="status-Y">6.14</td>
+
+<td class="status-Y">6.13
+	<span class="tooltip">(*)<span class="tooltiptext">DT bits in 6.14</span></span></td>
+
+<td class="status-unknown"></td>
+
+<td class="status-unknown"></td>
+
+<td class="status-Y">6.13
+	<span class="tooltip">(*)<span class="tooltiptext">DT bits in 6.14</span></span></td>
+
+<td class="status-next">WIP
+	<span class="tooltip">(*)<span class="tooltiptext">crashes on startup</span></span></td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-unknown"></td>
+
+<td class="status-unknown"></td>
+
+<td class="status-unknown"></td>
+
+<td class="status-unknown"></td>
+
+<td class="status-unknown"></td>
+
+<td class="status-unknown"></td>
+
+<td class="status-N">N</td>
+
+<td class="status-N">N</td>
+
+<td class="status-N">N</td>
+
+<td class="status-N">N</td>
+
+<td class="status-N">N</td>
+
+<td class="status-unknown"></td>
+
+<td class="status-N">N</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-N">N</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-N">N</td>
+
+<td class="status-unknown"></td>
+
+<td class="status-Y">6.14</td>
+
+<td class="status-unknown"></td>
+
+<td class="status-unknown"></td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-Y">6.16</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-Y">6.16</td>
+
+<td class="status-Y">6.12
+	<span class="tooltip">(*)<span class="tooltiptext">DT bits in 6.14</span></span></td>
+
+<td class="status-unknown"></td>
+
+<td class="status-unknown"></td>
+
+<td class="status-unknown"></td>
+
+<td class="status-unknown"></td>
+
+<td class="status-unknown"></td>
+
+<td class="status-unknown"></td>
+
+<td class="status-unknown"></td>
+
+<td class="status-unknown"></td>
+
+<td class="status-unknown"></td>
+
+<td class="status-unknown"></td>
+
+<td class="status-unknown"></td>
+
+<td class="status-Y">6.13
+	<span class="tooltip">(*)<span class="tooltiptext">DT bits in 6.14</span></span></td>
+
+<td class="status-unknown"></td>
+
+<td class="status-Y">6.14</td>
+
+<td class="status-unknown"></td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-Y">6.13
+	<span class="tooltip">(*)<span class="tooltiptext">DT bits in 6.14</span></span></td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-Y">6.13
+	<span class="tooltip">(*)<span class="tooltiptext">DT bits in 6.14</span></span></td>
+
+<td class="status-unknown"></td>
+
+<td class="status-unknown"></td>
+
+<td class="status-unknown"></td>
+
+<td class="status-unknown"></td>
+
+<td class="status-unknown"></td>
+
+<td class="status-unknown"></td>
+
+
+<td><a href="/mainline-status/soc/sar2130p">SAR2130P</a></td>
+</tr>
+
+<tr>
+<td><a href="/mainline-status/soc/sc7180">SC7180</a></td>
+
+
+<td class="status-Y">5.6</td>
+
+<td class="status-Y">5.6</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-Y">5.6</td>
+
+<td class="status-Y">5.7</td>
+
+<td class="status-Y">5.6</td>
+
+<td class="status-Y">5.6</td>
+
+<td class="status-Y">5.6</td>
+
+<td class="status-Y">5.6</td>
+
+<td class="status-unknown"></td>
+
+<td class="status-Y">5.6</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-Y">6.9</td>
+
+<td class="status-Y">6.9</td>
+
+<td class="status-Y">5.7</td>
+
+<td class="status-unknown"></td>
+
+<td class="status-Y">5.6</td>
+
+<td class="status-Y">5.8</td>
+
+<td class="status-unknown"></td>
+
+<td class="status-Y">5.7</td>
+
+<td class="status-Y">5.6</td>
+
+<td class="status-Y">5.6</td>
+
+<td class="status-Y">5.9</td>
+
+<td class="status-unknown"></td>
+
+<td class="status-Y">6.7</td>
+
+<td class="status-unknown"></td>
+
+<td class="status-unknown"></td>
+
+<td class="status-Y">5.8</td>
+
+<td class="status-unknown"></td>
+
+<td class="status-unknown"></td>
+
+<td class="status-Y">5.9</td>
+
+<td class="status-Y">5.8</td>
+
+<td class="status-unknown"></td>
+
+<td class="status-unknown"></td>
+
+<td class="status-unknown"></td>
+
+<td class="status-unknown"></td>
+
+<td class="status-Y">5.1</td>
+
+<td class="status-unknown"></td>
+
+<td class="status-Y">5.1</td>
+
+<td class="status-unknown"></td>
+
+<td class="status-unknown"></td>
+
+<td class="status-unknown"></td>
+
+<td class="status-unknown"></td>
+
+<td class="status-unknown"></td>
+
+<td class="status-unknown"></td>
+
+<td class="status-unknown"></td>
+
+<td class="status-Y">5.6</td>
+
+<td class="status-unknown"></td>
+
+<td class="status-unknown"></td>
+
+<td class="status-unknown"></td>
+
+<td class="status-Y">5.7</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-Y">5.15</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-Y">5.15</td>
+
+<td class="status-Y">5.8</td>
+
+<td class="status-unknown"></td>
+
+<td class="status-unknown"></td>
+
+<td class="status-unknown"></td>
+
+<td class="status-unknown"></td>
+
+<td class="status-unknown"></td>
+
+<td class="status-unknown"></td>
+
+<td class="status-unknown"></td>
+
+<td class="status-Y">5.7</td>
+
+<td class="status-Y">5.6</td>
+
+<td class="status-unknown"></td>
+
+<td class="status-unknown"></td>
+
+<td class="status-unknown"></td>
+
+<td class="status-unknown"></td>
+
+<td class="status-Y">5.6</td>
+
+<td class="status-unknown"></td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-Y">5.6</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-Y">5.6</td>
+
+<td class="status-unknown"></td>
+
+<td class="status-Y">5.16</td>
+
+<td class="status-Y">5.16</td>
+
+<td class="status-Y">5.8</td>
+
+<td class="status-Y">6.3</td>
+
+<td class="status-unknown"></td>
+
+
+<td><a href="/mainline-status/soc/sc7180">SC7180</a></td>
+</tr>
+
+<tr>
+<td><a href="/mainline-status/soc/sc8180x">SC8180X</a></td>
+
+
+<td class="status-Y">6.5</td>
+
+<td class="status-Y">6.5</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-Y">6.5</td>
+
+<td class="status-Y">6.5</td>
+
+<td class="status-Y">6.5</td>
+
+<td class="status-Y">6.5</td>
+
+<td class="status-Y">6.5</td>
+
+<td class="status-Y">6.5</td>
+
+<td class="status-Y">6.5</td>
+
+<td class="status-Y">6.5</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-Y">6.5</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-Y">6.5</td>
+
+<td class="status-Y">6.5</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-Y">6.5</td>
+
+<td class="status-Y">6.5</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-Y">6.5</td>
+
+<td class="status-Y">6.5</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-Y">6.5</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-Y">6.5</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-Y">6.5</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-Y">6.6</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-Y">6.5</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-Y">6.5</td>
+
+<td class="status-Y">6.5</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-Y">6.5</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-Y">6.5</td>
+
+<td class="status-Y">6.5</td>
+
+<td class="status-Y">6.9</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-NA">N/A</td>
+
+
+<td><a href="/mainline-status/soc/sc8180x">SC8180X</a></td>
+</tr>
+
+<tr>
+<td><a href="/mainline-status/soc/sc8280xp">SC8280XP</a>
+	<span class="tooltip">(*)<span class="tooltiptext">SC8280XP, SA8540P, SA8295P</span></span></td>
+
+
+<td class="status-Y">6.0</td>
+
+<td class="status-Y">6.0</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-Y">6.0</td>
+
+<td class="status-Y">6.0</td>
+
+<td class="status-Y">6.0</td>
+
+<td class="status-Y">6.0</td>
+
+<td class="status-Y">6.0</td>
+
+<td class="status-Y">6.3</td>
+
+<td class="status-Y">6.0</td>
+
+<td class="status-Y">6.0</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-Y">6.0</td>
+
+<td class="status-unknown"></td>
+
+<td class="status-Y">6.5</td>
+
+<td class="status-unknown"></td>
+
+<td class="status-Y">6.0</td>
+
+<td class="status-Y">6.0</td>
+
+<td class="status-unknown"></td>
+
+<td class="status-Y">6.0</td>
+
+<td class="status-Y">6.0</td>
+
+<td class="status-unknown"></td>
+
+<td class="status-unknown"></td>
+
+<td class="status-unknown"></td>
+
+<td class="status-Y">6.0</td>
+
+<td class="status-Y">6.0</td>
+
+<td class="status-Y">6.16</td>
+
+<td class="status-unknown"></td>
+
+<td class="status-Y">6.0</td>
+
+<td class="status-next">WIP</td>
+
+<td class="status-unknown"></td>
+
+<td class="status-unknown"></td>
+
+<td class="status-Y">6.5</td>
+
+<td class="status-unknown"></td>
+
+<td class="status-Y">6.3</td>
+
+<td class="status-Y">6.3</td>
+
+<td class="status-Y">6.3</td>
+
+<td class="status-Y">6.3</td>
+
+<td class="status-unknown"></td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-Y">6.3</td>
+
+<td class="status-unknown"></td>
+
+<td class="status-Y">6.3</td>
+
+<td class="status-unknown"></td>
+
+<td class="status-Y">6.0</td>
+
+<td class="status-Y">6.0</td>
+
+<td class="status-unknown"></td>
+
+<td class="status-Y">6.5</td>
+
+<td class="status-Y">6.0</td>
+
+<td class="status-unknown"></td>
+
+<td class="status-unknown"></td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-Y">6.3</td>
+
+<td class="status-Y">6.5</td>
+
+<td class="status-Y">6.9</td>
+
+<td class="status-Y">6.9</td>
+
+<td class="status-Y">6.9</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-Y">6.9</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-unknown"></td>
+
+<td class="status-Y">6.0</td>
+
+<td class="status-unknown"></td>
+
+<td class="status-Y">6.3</td>
+
+<td class="status-Y">6.18</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-Y">6.1</td>
+
+<td class="status-unknown"></td>
+
+<td class="status-unknown"></td>
+
+<td class="status-Y">6.0</td>
+
+<td class="status-unknown"></td>
+
+<td class="status-Y">6.0</td>
+
+<td class="status-Y">6.1</td>
+
+<td class="status-unknown"></td>
+
+<td class="status-unknown"></td>
+
+<td class="status-unknown"></td>
+
+<td class="status-unknown"></td>
+
+<td class="status-unknown"></td>
+
+
+<td><a href="/mainline-status/soc/sc8280xp">SC8280XP</a>
+	<span class="tooltip">(*)<span class="tooltiptext">SC8280XP, SA8540P, SA8295P</span></span></td>
+</tr>
+
+<tr>
+<td><a href="/mainline-status/soc/sdm845">SDM845</a>
+	<span class="tooltip">(*)<span class="tooltiptext">SDM845, SDM850</span></span></td>
+
+
+<td class="status-Y">4.18</td>
+
+<td class="status-Y">4.19</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-Y">4.18</td>
+
+<td class="status-Y">5.7</td>
+
+<td class="status-Y">4.19</td>
+
+<td class="status-Y">4.18</td>
+
+<td class="status-Y">4.19</td>
+
+<td class="status-Y">4.19</td>
+
+<td class="status-Y">5.7</td>
+
+<td class="status-Y">5.1</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-Y">5.1</td>
+
+<td class="status-Y">5.9</td>
+
+<td class="status-Y">5.1</td>
+
+<td class="status-unknown"></td>
+
+<td class="status-Y">5.1</td>
+
+<td class="status-Y">5.3</td>
+
+<td class="status-unknown"></td>
+
+<td class="status-unknown"></td>
+
+<td class="status-Y">4.18</td>
+
+<td class="status-Y">5.4</td>
+
+<td class="status-Y">5.9</td>
+
+<td class="status-Y">6.0 / 6.1</td>
+
+<td class="status-Y">5.2</td>
+
+<td class="status-Y">5.2</td>
+
+<td class="status-next">WIP</td>
+
+<td class="status-Y">5.3</td>
+
+<td class="status-Y">5.4</td>
+
+<td class="status-Y">4.19</td>
+
+<td class="status-Y">5.1</td>
+
+<td class="status-Y">5.7</td>
+
+<td class="status-unknown"></td>
+
+<td class="status-unknown"></td>
+
+<td class="status-unknown"></td>
+
+<td class="status-Y">5.7</td>
+
+<td class="status-unknown"></td>
+
+<td class="status-unknown"></td>
+
+<td class="status-Y">5.7</td>
+
+<td class="status-unknown"></td>
+
+<td class="status-unknown"></td>
+
+<td class="status-Y">5.7</td>
+
+<td class="status-unknown"></td>
+
+<td class="status-unknown"></td>
+
+<td class="status-Y">5.7</td>
+
+<td class="status-Y">4.2</td>
+
+<td class="status-Y">4.2</td>
+
+<td class="status-unknown"></td>
+
+<td class="status-unknown"></td>
+
+<td class="status-unknown"></td>
+
+<td class="status-Y">5.1</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-Y">6.2</td>
+
+<td class="status-Y">5.3</td>
+
+<td class="status-Y">5.13</td>
+
+<td class="status-unknown"></td>
+
+<td class="status-Y">5.8</td>
+
+<td class="status-Y">5.13</td>
+
+<td class="status-Y">5.13</td>
+
+<td class="status-unknown"></td>
+
+<td class="status-unknown"></td>
+
+<td class="status-Y">5.4</td>
+
+<td class="status-Y">5.5</td>
+
+<td class="status-Y">5.11</td>
+
+<td class="status-Y">5.1</td>
+
+<td class="status-Y">5.18</td>
+
+<td class="status-unknown"></td>
+
+<td class="status-Y">4.2</td>
+
+<td class="status-unknown"></td>
+
+<td class="status-unknown"></td>
+
+<td class="status-Y">5.6</td>
+
+<td class="status-unknown"></td>
+
+<td class="status-Y">4.19</td>
+
+<td class="status-Y">5.16</td>
+
+<td class="status-Y">6.1</td>
+
+<td class="status-unknown"></td>
+
+<td class="status-Y">5.4</td>
+
+<td class="status-unknown"></td>
+
+<td class="status-unknown"></td>
+
+
+<td><a href="/mainline-status/soc/sdm845">SDM845</a>
+	<span class="tooltip">(*)<span class="tooltiptext">SDM845, SDM850</span></span></td>
+</tr>
+
+<tr>
+<td><a href="/mainline-status/soc/sdx65">SDX65</a></td>
+
+
+<td class="status-Y">5.17</td>
+
+<td class="status-Y">5.17</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-Y">5.17</td>
+
+<td class="status-Y">5.19</td>
+
+<td class="status-Y">5.17</td>
+
+<td class="status-Y">5.19</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-Y">6.5</td>
+
+<td class="status-Y">5.19</td>
+
+<td class="status-Y">6.0</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-Y">5.19</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-Y">6.0</td>
+
+<td class="status-unknown"></td>
+
+<td class="status-unknown"></td>
+
+<td class="status-unknown"></td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-unknown"></td>
+
+<td class="status-unknown"></td>
+
+<td class="status-next">WIP</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-Y">6.0</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-Y">6.4</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-unknown"></td>
+
+<td class="status-Y">6.0</td>
+
+<td class="status-unknown"></td>
+
+<td class="status-next">WIP</td>
+
+<td class="status-unknown"></td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-unknown"></td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-Y">6.0</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-Y">6.0</td>
+
+<td class="status-unknown"></td>
+
+<td class="status-unknown"></td>
+
+<td class="status-unknown"></td>
+
+<td class="status-Y">5.17</td>
+
+<td class="status-unknown"></td>
+
+<td class="status-unknown"></td>
+
+<td class="status-unknown"></td>
+
+<td class="status-unknown"></td>
+
+<td class="status-Y">6.0</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-next">WIP</td>
+
+
+<td><a href="/mainline-status/soc/sdx65">SDX65</a></td>
+</tr>
+
+<tr>
+<td><a href="/mainline-status/soc/sdx75">SDX75</a></td>
+
+
+<td class="status-Y">6.5</td>
+
+<td class="status-Y">6.5</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-Y">6.5</td>
+
+<td class="status-Y">6.8</td>
+
+<td class="status-Y">6.5</td>
+
+<td class="status-Y">6.6</td>
+
+<td class="status-Y">6.11</td>
+
+<td class="status-Y">6.11</td>
+
+<td class="status-next">WIP</td>
+
+<td class="status-Y">6.5</td>
+
+<td class="status-Y">6.16</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-Y">6.11</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-Y">6.5</td>
+
+<td class="status-Y">6.5</td>
+
+<td class="status-Y">6.5</td>
+
+<td class="status-Y">6.5</td>
+
+<td class="status-Y">6.5</td>
+
+<td class="status-next">WIP</td>
+
+<td class="status-N">N</td>
+
+<td class="status-next">WIP</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-Y">6.12</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-next">WIP</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-next">WIP</td>
+
+<td class="status-Y">6.8</td>
+
+<td class="status-next">WIP</td>
+
+<td class="status-next">WIP</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-unknown"></td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-next">WIP</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-next">WIP</td>
+
+<td class="status-Y">6.11</td>
+
+<td class="status-next">WIP</td>
+
+<td class="status-N">N</td>
+
+<td class="status-N">N</td>
+
+<td class="status-N">N</td>
+
+<td class="status-Y">6.5</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-N">N</td>
+
+<td class="status-N">N</td>
+
+<td class="status-N">N</td>
+
+<td class="status-next">WIP</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-next">WIP</td>
+
+
+<td><a href="/mainline-status/soc/sdx75">SDX75</a></td>
+</tr>
+
+<tr>
+<td><a href="/mainline-status/soc/sm4450">SM4450</a></td>
+
+
+<td class="status-Y">6.8</td>
+
+<td class="status-Y">6.8</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-Y">6.8</td>
+
+<td class="status-N">N</td>
+
+<td class="status-Y">6.6</td>
+
+<td class="status-N">N</td>
+
+<td class="status-N">N</td>
+
+<td class="status-N">N</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-N">N</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-unknown"></td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-N">N</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-Y">6.11</td>
+
+<td class="status-Y">6.6</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-unknown"></td>
+
+<td class="status-Y">6.6</td>
+
+<td class="status-N">N</td>
+
+<td class="status-N">N</td>
+
+<td class="status-N">N</td>
+
+<td class="status-N">N</td>
+
+<td class="status-N">N</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-N">N</td>
+
+<td class="status-N">N</td>
+
+<td class="status-N">N</td>
+
+<td class="status-unknown"></td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-N">N</td>
+
+<td class="status-N">N</td>
+
+<td class="status-N">N</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-N">N</td>
+
+<td class="status-N">N</td>
+
+<td class="status-N">N</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-N">N</td>
+
+<td class="status-unknown"></td>
+
+<td class="status-unknown"></td>
+
+<td class="status-unknown"></td>
+
+<td class="status-unknown"></td>
+
+<td class="status-unknown"></td>
+
+<td class="status-N">N</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-unknown"></td>
+
+<td class="status-N">N</td>
+
+<td class="status-N">N</td>
+
+<td class="status-N">N</td>
+
+<td class="status-N">N</td>
+
+<td class="status-N">N</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-N">N</td>
+
+<td class="status-unknown"></td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-N">N</td>
+
+<td class="status-N">N</td>
+
+<td class="status-N">N</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-N">N</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-N">N</td>
+
+<td class="status-N">N</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-unknown"></td>
+
+<td class="status-unknown"></td>
+
+
+<td><a href="/mainline-status/soc/sm4450">SM4450</a></td>
+</tr>
+
+<tr>
+<td><a href="/mainline-status/soc/sm6350">SM6350</a>
+	<span class="tooltip">(*)<span class="tooltiptext">SM6350, SM7225</span></span></td>
+
+
+<td class="status-Y">5.16</td>
+
+<td class="status-Y">5.16</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-Y">5.16</td>
+
+<td class="status-Y">6.1</td>
+
+<td class="status-Y">5.16</td>
+
+<td class="status-Y">5.16</td>
+
+<td class="status-Y">5.19</td>
+
+<td class="status-unknown"></td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-Y">5.16</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-Y">5.19</td>
+
+<td class="status-unknown"></td>
+
+<td class="status-Y">5.16</td>
+
+<td class="status-unknown"></td>
+
+<td class="status-Y">5.16</td>
+
+<td class="status-Y">6.5</td>
+
+<td class="status-Y">5.16</td>
+
+<td class="status-Y">5.16</td>
+
+<td class="status-Y">5.16</td>
+
+<td class="status-Y">5.16</td>
+
+<td class="status-unknown"></td>
+
+<td class="status-Y">6.6</td>
+
+<td class="status-Y">5.17</td>
+
+<td class="status-Y">5.17</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-Y">5.17</td>
+
+<td class="status-Y">5.17</td>
+
+<td class="status-Y">6.6</td>
+
+<td class="status-Y">5.19</td>
+
+<td class="status-Y">6.3</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-unknown"></td>
+
+<td class="status-unknown"></td>
+
+<td class="status-unknown"></td>
+
+<td class="status-unknown"></td>
+
+<td class="status-unknown"></td>
+
+<td class="status-unknown"></td>
+
+<td class="status-unknown"></td>
+
+<td class="status-unknown"></td>
+
+<td class="status-unknown"></td>
+
+<td class="status-unknown"></td>
+
+<td class="status-unknown"></td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-Y">5.16</td>
+
+<td class="status-Y">5.16</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-Y">6.6</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-Y">6.1</td>
+
+<td class="status-Y">6.6</td>
+
+<td class="status-unknown"></td>
+
+<td class="status-unknown"></td>
+
+<td class="status-unknown"></td>
+
+<td class="status-unknown"></td>
+
+<td class="status-unknown"></td>
+
+<td class="status-unknown"></td>
+
+<td class="status-unknown"></td>
+
+<td class="status-unknown"></td>
+
+<td class="status-Y">5.16</td>
+
+<td class="status-Y">6.1</td>
+
+<td class="status-Y">5.16</td>
+
+<td class="status-Y">6.1</td>
+
+<td class="status-unknown"></td>
+
+<td class="status-Y">6.6</td>
+
+<td class="status-unknown"></td>
+
+<td class="status-unknown"></td>
+
+<td class="status-Y">5.16</td>
+
+<td class="status-unknown"></td>
+
+<td class="status-Y">5.16</td>
+
+<td class="status-unknown"></td>
+
+<td class="status-Y">6.18</td>
+
+<td class="status-unknown"></td>
+
+<td class="status-unknown"></td>
+
+<td class="status-unknown"></td>
+
+<td class="status-unknown"></td>
+
+
+<td><a href="/mainline-status/soc/sm6350">SM6350</a>
+	<span class="tooltip">(*)<span class="tooltiptext">SM6350, SM7225</span></span></td>
+</tr>
+
+<tr>
+<td><a href="/mainline-status/soc/sm8150">SM8150</a></td>
+
+
+<td class="status-Y">5.4</td>
+
+<td class="status-Y">5.4</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-Y">5.4</td>
+
+<td class="status-Y">5.1</td>
+
+<td class="status-Y">5.4</td>
+
+<td class="status-Y">5.4</td>
+
+<td class="status-Y">5.13</td>
+
+<td class="status-Y">5.14</td>
+
+<td class="status-Y">5.19</td>
+
+<td class="status-Y">5.11</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-Y">5.6</td>
+
+<td class="status-Y">5.14</td>
+
+<td class="status-Y">5.19</td>
+
+<td class="status-unknown"></td>
+
+<td class="status-Y">5.6</td>
+
+<td class="status-Y">5.12</td>
+
+<td class="status-unknown"></td>
+
+<td class="status-Y">5.11</td>
+
+<td class="status-Y">5.4</td>
+
+<td class="status-unknown"></td>
+
+<td class="status-unknown"></td>
+
+<td class="status-unknown"></td>
+
+<td class="status-Y">5.6</td>
+
+<td class="status-Y">5.6</td>
+
+<td class="status-Y">5.6</td>
+
+<td class="status-Y">5.6</td>
+
+<td class="status-Y">5.16</td>
+
+<td class="status-unknown"></td>
+
+<td class="status-Y">5.11</td>
+
+<td class="status-unknown"></td>
+
+<td class="status-Y">5.19</td>
+
+<td class="status-unknown"></td>
+
+<td class="status-unknown"></td>
+
+<td class="status-unknown"></td>
+
+<td class="status-unknown"></td>
+
+<td class="status-unknown"></td>
+
+<td class="status-unknown"></td>
+
+<td class="status-unknown"></td>
+
+<td class="status-unknown"></td>
+
+<td class="status-unknown"></td>
+
+<td class="status-unknown"></td>
+
+<td class="status-unknown"></td>
+
+<td class="status-unknown"></td>
+
+<td class="status-Y">5.11</td>
+
+<td class="status-Y">5.9</td>
+
+<td class="status-Y">6.8</td>
+
+<td class="status-Y">6.8</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-Y">6.3</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-Y">6.8</td>
+
+<td class="status-Y">5.9</td>
+
+<td class="status-unknown"></td>
+
+<td class="status-unknown"></td>
+
+<td class="status-unknown"></td>
+
+<td class="status-unknown"></td>
+
+<td class="status-unknown"></td>
+
+<td class="status-unknown"></td>
+
+<td class="status-unknown"></td>
+
+<td class="status-unknown"></td>
+
+<td class="status-Y">5.6</td>
+
+<td class="status-Y">6.5</td>
+
+<td class="status-unknown"></td>
+
+<td class="status-Y">5.14</td>
+
+<td class="status-unknown"></td>
+
+<td class="status-unknown"></td>
+
+<td class="status-unknown"></td>
+
+<td class="status-unknown"></td>
+
+<td class="status-Y">5.19</td>
+
+<td class="status-unknown"></td>
+
+<td class="status-Y">5.9</td>
+
+<td class="status-Y">5.18</td>
+
+<td class="status-Y">5.16</td>
+
+<td class="status-unknown"></td>
+
+<td class="status-Y">5.11</td>
+
+<td class="status-unknown"></td>
+
+<td class="status-unknown"></td>
+
+
+<td><a href="/mainline-status/soc/sm8150">SM8150</a></td>
+</tr>
+
+<tr>
+<td><a href="/mainline-status/soc/sm8250">SM8250</a>
+	<span class="tooltip">(*)<span class="tooltiptext">SM8150, QRB5165</span></span></td>
+
+
+<td class="status-Y">5.7</td>
+
+<td class="status-Y">5.7</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-Y">5.8</td>
+
+<td class="status-Y">5.1</td>
+
+<td class="status-Y">5.7</td>
+
+<td class="status-Y">5.7</td>
+
+<td class="status-Y">5.9</td>
+
+<td class="status-Y">5.9</td>
+
+<td class="status-Y">5.12</td>
+
+<td class="status-Y">5.11</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-Y">5.8</td>
+
+<td class="status-unknown"></td>
+
+<td class="status-Y">5.8 / 5.11</td>
+
+<td class="status-unknown"></td>
+
+<td class="status-Y">5.1</td>
+
+<td class="status-Y">5.19</td>
+
+<td class="status-unknown"></td>
+
+<td class="status-Y">5.12</td>
+
+<td class="status-Y">5.7</td>
+
+<td class="status-unknown"></td>
+
+<td class="status-unknown"></td>
+
+<td class="status-Y">6.5</td>
+
+<td class="status-Y">5.8</td>
+
+<td class="status-Y">5.8</td>
+
+<td class="status-Y">5.9</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-Y">5.11</td>
+
+<td class="status-unknown"></td>
+
+<td class="status-unknown"></td>
+
+<td class="status-unknown"></td>
+
+<td class="status-unknown"></td>
+
+<td class="status-unknown"></td>
+
+<td class="status-unknown"></td>
+
+<td class="status-Y">5.12</td>
+
+<td class="status-Y">5.12</td>
+
+<td class="status-Y">5.12</td>
+
+<td class="status-Y">5.12</td>
+
+<td class="status-Y">5.12</td>
+
+<td class="status-Y">5.12</td>
+
+<td class="status-unknown"></td>
+
+<td class="status-Y">5.12</td>
+
+<td class="status-unknown"></td>
+
+<td class="status-unknown"></td>
+
+<td class="status-Y">5.11</td>
+
+<td class="status-Y">5.11</td>
+
+<td class="status-unknown"></td>
+
+<td class="status-Y">6.7</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-Y">5.12</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-Y">6.7</td>
+
+<td class="status-Y">5.9</td>
+
+<td class="status-Y">5.19</td>
+
+<td class="status-unknown"></td>
+
+<td class="status-Y">5.19</td>
+
+<td class="status-Y">5.19</td>
+
+<td class="status-Y">5.19?</td>
+
+<td class="status-unknown"></td>
+
+<td class="status-unknown"></td>
+
+<td class="status-Y">5.13</td>
+
+<td class="status-Y">5.9</td>
+
+<td class="status-Y">6.5</td>
+
+<td class="status-Y">5.11</td>
+
+<td class="status-Y">5.14</td>
+
+<td class="status-unknown"></td>
+
+<td class="status-unknown"></td>
+
+<td class="status-unknown"></td>
+
+<td class="status-unknown"></td>
+
+<td class="status-Y">5.7</td>
+
+<td class="status-unknown"></td>
+
+<td class="status-Y">5.1</td>
+
+<td class="status-unknown"></td>
+
+<td class="status-Y">5.16</td>
+
+<td class="status-unknown"></td>
+
+<td class="status-Y">6.2</td>
+
+<td class="status-unknown"></td>
+
+<td class="status-unknown"></td>
+
+
+<td><a href="/mainline-status/soc/sm8250">SM8250</a>
+	<span class="tooltip">(*)<span class="tooltiptext">SM8150, QRB5165</span></span></td>
+</tr>
+
+<tr>
+<td><a href="/mainline-status/soc/sm8350">SM8350</a></td>
+
+
+<td class="status-Y">5.12</td>
+
+<td class="status-Y">5.12</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-Y">5.12</td>
+
+<td class="status-Y">5.13</td>
+
+<td class="status-Y">5.12</td>
+
+<td class="status-Y">5.13</td>
+
+<td class="status-Y">5.17</td>
+
+<td class="status-Y">5.17</td>
+
+<td class="status-Y">6.3</td>
+
+<td class="status-Y">5.13</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-Y">5.13</td>
+
+<td class="status-unknown"></td>
+
+<td class="status-Y">6.2</td>
+
+<td class="status-unknown"></td>
+
+<td class="status-Y">5.13</td>
+
+<td class="status-Y">5.16</td>
+
+<td class="status-unknown"></td>
+
+<td class="status-Y">5.17</td>
+
+<td class="status-Y">5.12</td>
+
+<td class="status-unknown"></td>
+
+<td class="status-unknown"></td>
+
+<td class="status-unknown"></td>
+
+<td class="status-Y">5.13</td>
+
+<td class="status-Y">5.13</td>
+
+<td class="status-Y">5.13</td>
+
+<td class="status-Y">5.13</td>
+
+<td class="status-Y">5.16</td>
+
+<td class="status-unknown"></td>
+
+<td class="status-unknown"></td>
+
+<td class="status-Y">5.14</td>
+
+<td class="status-unknown"></td>
+
+<td class="status-unknown"></td>
+
+<td class="status-unknown"></td>
+
+<td class="status-unknown"></td>
+
+<td class="status-unknown"></td>
+
+<td class="status-unknown"></td>
+
+<td class="status-unknown"></td>
+
+<td class="status-unknown"></td>
+
+<td class="status-unknown"></td>
+
+<td class="status-unknown"></td>
+
+<td class="status-Y">6.6</td>
+
+<td class="status-unknown"></td>
+
+<td class="status-unknown"></td>
+
+<td class="status-Y">5.13</td>
+
+<td class="status-Y">5.13</td>
+
+<td class="status-unknown"></td>
+
+<td class="status-unknown"></td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-Y">6.3</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-Y">6.4</td>
+
+<td class="status-Y">6.3</td>
+
+<td class="status-unknown"></td>
+
+<td class="status-unknown"></td>
+
+<td class="status-unknown"></td>
+
+<td class="status-unknown"></td>
+
+<td class="status-unknown"></td>
+
+<td class="status-unknown"></td>
+
+<td class="status-unknown"></td>
+
+<td class="status-unknown"></td>
+
+<td class="status-unknown"></td>
+
+<td class="status-Y">6.5</td>
+
+<td class="status-Y">5.13</td>
+
+<td class="status-Y">5.19</td>
+
+<td class="status-unknown"></td>
+
+<td class="status-unknown"></td>
+
+<td class="status-unknown"></td>
+
+<td class="status-unknown"></td>
+
+<td class="status-Y">5.12</td>
+
+<td class="status-unknown"></td>
+
+<td class="status-Y">5.13</td>
+
+<td class="status-Y">6.6</td>
+
+<td class="status-unknown"></td>
+
+<td class="status-unknown"></td>
+
+<td class="status-unknown"></td>
+
+<td class="status-unknown"></td>
+
+<td class="status-unknown"></td>
+
+
+<td><a href="/mainline-status/soc/sm8350">SM8350</a></td>
+</tr>
+
+<tr>
+<td><a href="/mainline-status/soc/sm8450">SM8450</a></td>
+
+
+<td class="status-Y">5.17</td>
+
+<td class="status-Y">5.17</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-Y">5.17</td>
+
+<td class="status-Y">5.17</td>
+
+<td class="status-Y">5.17</td>
+
+<td class="status-Y">6.3</td>
+
+<td class="status-Y">5.17</td>
+
+<td class="status-Y">5.19</td>
+
+<td class="status-Y">5.18
+	<span class="tooltip">(*)<span class="tooltiptext">PHY support was added in 5.17, EP in 6.16</span></span></td>
+
+<td class="status-Y">5.17</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-Y">5.17</td>
+
+<td class="status-Y">6.1
+	<span class="tooltip">(*)<span class="tooltiptext">Shared ICE support was added in next-6.6</span></span></td>
+
+<td class="status-Y">6.1</td>
+
+<td class="status-unknown"></td>
+
+<td class="status-Y">5.17</td>
+
+<td class="status-Y">5.17</td>
+
+<td class="status-unknown"></td>
+
+<td class="status-unknown"></td>
+
+<td class="status-Y">5.17</td>
+
+<td class="status-Y">5.17</td>
+
+<td class="status-unknown"></td>
+
+<td class="status-unknown"></td>
+
+<td class="status-Y">5.18</td>
+
+<td class="status-Y">5.18</td>
+
+<td class="status-Y">5.18</td>
+
+<td class="status-Y">5.18</td>
+
+<td class="status-Y">5.19</td>
+
+<td class="status-Y">6.13</td>
+
+<td class="status-Y">6.13</td>
+
+<td class="status-unknown"></td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-unknown"></td>
+
+<td class="status-Y">6.2</td>
+
+<td class="status-Y">6.2</td>
+
+<td class="status-Y">6.2</td>
+
+<td class="status-Y">6.3</td>
+
+<td class="status-unknown"></td>
+
+<td class="status-unknown"></td>
+
+<td class="status-Y">6.2</td>
+
+<td class="status-unknown"></td>
+
+<td class="status-Y">6.2</td>
+
+<td class="status-unknown"></td>
+
+<td class="status-Y">6.2</td>
+
+<td class="status-unknown"></td>
+
+<td class="status-Y">5.18</td>
+
+<td class="status-unknown"></td>
+
+<td class="status-Y">6.4</td>
+
+<td class="status-unknown"></td>
+
+<td class="status-Y">6.3</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-Y">6.4</td>
+
+<td class="status-Y">6.8</td>
+
+<td class="status-unknown"></td>
+
+<td class="status-unknown"></td>
+
+<td class="status-unknown"></td>
+
+<td class="status-unknown"></td>
+
+<td class="status-unknown"></td>
+
+<td class="status-unknown"></td>
+
+<td class="status-unknown"></td>
+
+<td class="status-N">N</td>
+
+<td class="status-N">N</td>
+
+<td class="status-Y">6.5</td>
+
+<td class="status-Y">6.8</td>
+
+<td class="status-Y">5.17</td>
+
+<td class="status-next">WIP</td>
+
+<td class="status-unknown"></td>
+
+<td class="status-unknown"></td>
+
+<td class="status-unknown"></td>
+
+<td class="status-unknown"></td>
+
+<td class="status-unknown"></td>
+
+<td class="status-unknown"></td>
+
+<td class="status-unknown"></td>
+
+<td class="status-Y">6.6</td>
+
+<td class="status-Y">6.4</td>
+
+<td class="status-Y">6.14</td>
+
+<td class="status-unknown"></td>
+
+<td class="status-unknown"></td>
+
+
+<td><a href="/mainline-status/soc/sm8450">SM8450</a></td>
+</tr>
+
+<tr>
+<td><a href="/mainline-status/soc/sm8550">SM8550</a></td>
+
+
+<td class="status-Y">6.3</td>
+
+<td class="status-Y">6.3</td>
+
+<td class="status-Y">6.3</td>
+
+<td class="status-Y">6.3</td>
+
+<td class="status-Y">6.3</td>
+
+<td class="status-Y">6.3</td>
+
+<td class="status-Y">6.3</td>
+
+<td class="status-Y">6.3</td>
+
+<td class="status-Y">6.3</td>
+
+<td class="status-Y">6.4
+	<span class="tooltip">(*)<span class="tooltiptext">PHY support was added in 6.3</span></span></td>
+
+<td class="status-Y">6.3</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-Y">6.3</td>
+
+<td class="status-Y">6.5
+	<span class="tooltip">(*)<span class="tooltiptext">Shared ICE support was added in 6.5</span></span></td>
+
+<td class="status-Y">6.3</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-Y">6.3</td>
+
+<td class="status-Y">6.3</td>
+
+<td class="status-unknown"></td>
+
+<td class="status-N">N</td>
+
+<td class="status-Y">6.3</td>
+
+<td class="status-Y">6.3</td>
+
+<td class="status-N">N</td>
+
+<td class="status-Y">6.3</td>
+
+<td class="status-Y">6.3</td>
+
+<td class="status-Y">6.3</td>
+
+<td class="status-Y">6.3</td>
+
+<td class="status-Y">6.3</td>
+
+<td class="status-Y">6.3</td>
+
+<td class="status-Y">6.6</td>
+
+<td class="status-Y">6.11</td>
+
+<td class="status-Y">6.8</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-unknown"></td>
+
+<td class="status-Y">6.5</td>
+
+<td class="status-Y">6.4</td>
+
+<td class="status-Y">6.4</td>
+
+<td class="status-Y">6.4</td>
+
+<td class="status-N">N</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-Y">6.6</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-Y">6.3</td>
+
+<td class="status-unknown"></td>
+
+<td class="status-Y">6.4</td>
+
+<td class="status-Y">6.4</td>
+
+<td class="status-Y">6.4</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-Y">6.6</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-Y">6.3</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-Y">6.5</td>
+
+<td class="status-Y">6.8</td>
+
+<td class="status-Y">6.15</td>
+
+<td class="status-Y">6.15</td>
+
+<td class="status-Y">6.12</td>
+
+<td class="status-Y">6.15</td>
+
+<td class="status-Y">6.15</td>
+
+<td class="status-Y">6.15</td>
+
+<td class="status-N">N</td>
+
+<td class="status-Y">6.15
+	<span class="tooltip">(*)<span class="tooltiptext">DT bits in 6.16</span></span></td>
+
+<td class="status-next">WIP</td>
+
+<td class="status-Y">6.4</td>
+
+<td class="status-Y">6.7
+	<span class="tooltip">(*)<span class="tooltiptext">DT bits in 6.8</span></span></td>
+
+<td class="status-Y">6.3</td>
+
+<td class="status-Y">6.3</td>
+
+<td class="status-next">WIP</td>
+
+<td class="status-unknown"></td>
+
+<td class="status-unknown"></td>
+
+<td class="status-unknown"></td>
+
+<td class="status-unknown"></td>
+
+<td class="status-Y">6.3</td>
+
+<td class="status-unknown"></td>
+
+<td class="status-Y">6.3</td>
+
+<td class="status-unknown"></td>
+
+<td class="status-N">N</td>
+
+<td class="status-unknown"></td>
+
+<td class="status-N">N</td>
+
+
+<td><a href="/mainline-status/soc/sm8550">SM8550</a></td>
+</tr>
+
+<tr>
+<td><a href="/mainline-status/soc/sm8650">SM8650</a></td>
+
+
+<td class="status-Y">6.8</td>
+
+<td class="status-Y">6.8</td>
+
+<td class="status-Y">6.8</td>
+
+<td class="status-Y">6.8</td>
+
+<td class="status-Y">6.8</td>
+
+<td class="status-Y">6.3</td>
+
+<td class="status-Y">6.3</td>
+
+<td class="status-Y">6.3</td>
+
+<td class="status-Y">6.3</td>
+
+<td class="status-Y">6.8</td>
+
+<td class="status-Y">6.3</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-Y">6.8</td>
+
+<td class="status-Y">6.8</td>
+
+<td class="status-Y">6.3</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-Y">6.6</td>
+
+<td class="status-Y">6.3</td>
+
+<td class="status-unknown"></td>
+
+<td class="status-Y">6.17</td>
+
+<td class="status-Y">6.3</td>
+
+<td class="status-Y">6.8</td>
+
+<td class="status-Y">6.17</td>
+
+<td class="status-Y">6.3</td>
+
+<td class="status-Y">6.8</td>
+
+<td class="status-Y">6.8</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-Y">6.8</td>
+
+<td class="status-Y">6.8</td>
+
+<td class="status-Y">6.6</td>
+
+<td class="status-Y">6.11</td>
+
+<td class="status-Y">6.8</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-unknown"></td>
+
+<td class="status-Y">6.9</td>
+
+<td class="status-Y">6.9</td>
+
+<td class="status-Y">6.8</td>
+
+<td class="status-Y">6.9</td>
+
+<td class="status-N">N</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-Y">6.8</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-Y">6.8</td>
+
+<td class="status-unknown"></td>
+
+<td class="status-Y">6.9</td>
+
+<td class="status-Y">6.8</td>
+
+<td class="status-Y">6.8</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-Y">6.8</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-Y">6.8</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-Y">6.8</td>
+
+<td class="status-Y">6.1</td>
+
+<td class="status-next">WIP</td>
+
+<td class="status-next">WIP</td>
+
+<td class="status-Y">6.12</td>
+
+<td class="status-next">WIP</td>
+
+<td class="status-next">WIP</td>
+
+<td class="status-next">WIP</td>
+
+<td class="status-next">WIP</td>
+
+<td class="status-Y">6.17</td>
+
+<td class="status-next">WIP</td>
+
+<td class="status-Y">6.4</td>
+
+<td class="status-Y">6.8</td>
+
+<td class="status-Y">6.3</td>
+
+<td class="status-Y">6.3</td>
+
+<td class="status-next">WIP</td>
+
+<td class="status-unknown"></td>
+
+<td class="status-unknown"></td>
+
+<td class="status-unknown"></td>
+
+<td class="status-unknown"></td>
+
+<td class="status-Y">6.3</td>
+
+<td class="status-unknown"></td>
+
+<td class="status-Y">6.3</td>
+
+<td class="status-unknown"></td>
+
+<td class="status-Y">6.14</td>
+
+<td class="status-unknown"></td>
+
+<td class="status-N">N</td>
+
+
+<td><a href="/mainline-status/soc/sm8650">SM8650</a></td>
+</tr>
+
+<tr>
+<td><a href="/mainline-status/soc/sm8750">SM8750</a></td>
+
+
+<td class="status-Y">6.14</td>
+
+<td class="status-Y">6.14</td>
+
+<td class="status-Y">6.14</td>
+
+<td class="status-Y">6.14</td>
+
+<td class="status-Y">6.14</td>
+
+<td class="status-Y">6.14</td>
+
+<td class="status-Y">6.14</td>
+
+<td class="status-Y">6.14</td>
+
+<td class="status-Y">6.14</td>
+
+<td class="status-Y">6.18</td>
+
+<td class="status-Y">6.14</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-Y">6.17</td>
+
+<td class="status-Y">6.17</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-unknown"></td>
+
+<td class="status-Y">6.14</td>
+
+<td class="status-Y">6.14</td>
+
+<td class="status-Y">6.14</td>
+
+<td class="status-unknown"></td>
+
+<td class="status-unknown"></td>
+
+<td class="status-Y">6.16</td>
+
+<td class="status-unknown"></td>
+
+<td class="status-Y">6.18</td>
+
+<td class="status-Y">6.16</td>
+
+<td class="status-Y">6.16</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-Y">6.16</td>
+
+<td class="status-Y">mailing list</td>
+
+<td class="status-Y">6.18</td>
+
+<td class="status-Y">6.18</td>
+
+<td class="status-unknown"></td>
+
+<td class="status-unknown"></td>
+
+<td class="status-unknown"></td>
+
+<td class="status-Y">6.17</td>
+
+<td class="status-Y">6.17</td>
+
+<td class="status-Y">6.16</td>
+
+<td class="status-Y">6.17</td>
+
+<td class="status-unknown"></td>
+
+<td class="status-unknown"></td>
+
+<td class="status-Y">6.17</td>
+
+<td class="status-unknown"></td>
+
+<td class="status-Y">6.14</td>
+
+<td class="status-unknown"></td>
+
+<td class="status-Y">6.16</td>
+
+<td class="status-Y">6.19</td>
+
+<td class="status-Y">6.19</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-Y">6.19</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-Y">mailing list</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-Y">mailing list</td>
+
+<td class="status-unknown"></td>
+
+<td class="status-unknown"></td>
+
+<td class="status-unknown"></td>
+
+<td class="status-unknown"></td>
+
+<td class="status-unknown"></td>
+
+<td class="status-unknown"></td>
+
+<td class="status-unknown"></td>
+
+<td class="status-unknown"></td>
+
+<td class="status-Y">mailing list</td>
+
+<td class="status-next">WIP</td>
+
+<td class="status-Y">6.16</td>
+
+<td class="status-Y">6.16</td>
+
+<td class="status-Y">6.14</td>
+
+<td class="status-unknown"></td>
+
+<td class="status-unknown"></td>
+
+<td class="status-unknown"></td>
+
+<td class="status-unknown"></td>
+
+<td class="status-unknown"></td>
+
+<td class="status-unknown"></td>
+
+<td class="status-unknown"></td>
+
+<td class="status-unknown"></td>
+
+<td class="status-Y">6.16</td>
+
+<td class="status-unknown"></td>
+
+<td class="status-unknown"></td>
+
+<td class="status-unknown"></td>
+
+<td class="status-unknown"></td>
+
+
+<td><a href="/mainline-status/soc/sm8750">SM8750</a></td>
+</tr>
+
+<tr>
+<td><a href="/mainline-status/soc/talos">Talos</a>
+	<span class="tooltip">(*)<span class="tooltiptext">SM6150, QCS615</span></span></td>
+
+
+<td class="status-Y">6.14</td>
+
+<td class="status-Y">6.14</td>
+
+<td class="status-Y">6.14</td>
+
+<td class="status-Y">6.14</td>
+
+<td class="status-Y">6.14</td>
+
+<td class="status-Y">6.14</td>
+
+<td class="status-Y">6.14</td>
+
+<td class="status-Y">6.14</td>
+
+<td class="status-Y">6.14</td>
+
+<td class="status-Y">6.18</td>
+
+<td class="status-Y">6.14</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-Y">6.14</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-Y">6.14</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-Y">6.18</td>
+
+<td class="status-Y">6.14</td>
+
+<td class="status-Y">6.14</td>
+
+<td class="status-Y">6.14</td>
+
+<td class="status-Y">6.14</td>
+
+<td class="status-Y">6.14</td>
+
+<td class="status-unknown"></td>
+
+<td class="status-Y">6.14</td>
+
+<td class="status-Y">6.17</td>
+
+<td class="status-Y">6.17</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-Y">6.18</td>
+
+<td class="status-next">WIP</td>
+
+<td class="status-next">WIP</td>
+
+<td class="status-unknown"></td>
+
+<td class="status-next">WIP</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-unknown"></td>
+
+<td class="status-unknown"></td>
+
+<td class="status-unknown"></td>
+
+<td class="status-unknown"></td>
+
+<td class="status-unknown"></td>
+
+<td class="status-unknown"></td>
+
+<td class="status-unknown"></td>
+
+<td class="status-unknown"></td>
+
+<td class="status-unknown"></td>
+
+<td class="status-unknown"></td>
+
+<td class="status-unknown"></td>
+
+<td class="status-Y">6.14</td>
+
+<td class="status-next">WIP</td>
+
+<td class="status-next">WIP</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-Y">6.19</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-next">WIP</td>
+
+<td class="status-next">WIP</td>
+
+<td class="status-unknown"></td>
+
+<td class="status-unknown"></td>
+
+<td class="status-unknown"></td>
+
+<td class="status-unknown"></td>
+
+<td class="status-unknown"></td>
+
+<td class="status-unknown"></td>
+
+<td class="status-unknown"></td>
+
+<td class="status-Y">6.18</td>
+
+<td class="status-Y">6.14</td>
+
+<td class="status-Y">6.16</td>
+
+<td class="status-Y">6.16</td>
+
+<td class="status-Y">6.14</td>
+
+<td class="status-Y">6.14</td>
+
+<td class="status-Y">6.14</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-Y">6.14</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-Y">6.18</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-Y">6.14</td>
+
+<td class="status-Y">6.17</td>
+
+<td class="status-Y">6.14</td>
+
+<td class="status-unknown"></td>
+
+<td class="status-unknown"></td>
+
+
+<td><a href="/mainline-status/soc/talos">Talos</a>
+	<span class="tooltip">(*)<span class="tooltiptext">SM6150, QCS615</span></span></td>
+</tr>
+
+</tbody>
+<tfoot>
+
+
+<tr>
+<th rowspan="2">Platform</th>
+<th colspan="3">Clocks</th>
+<th rowspan="2">Pinctrl</th>
+<th rowspan="2">Interconnects</th>
+<th rowspan="2">UART</th>
+<th rowspan="2">SPMI</th>
+<th rowspan="2">I2C</th>
+<th rowspan="2">SPI</th>
+<th rowspan="2">PCIe</th>
+<th rowspan="2">SMMU</th>
+<th colspan="6">Storage</th>
+<th colspan="8">CPU</th>
+<th colspan="5">Remoteproc</th>
+<th colspan="4">Connectivity</th>
+<th rowspan="2">GNSS (GPS)</th>
+<th colspan="11">Audio</th>
+<th colspan="5">USB</th>
+<th colspan="7">Display</th>
+<th colspan="7">Camera</th>
+<th colspan="1">Video</th>
+<th rowspan="2">Watchdog</th>
+<th colspan="2">Crypto</th>
+<th colspan="2">DMA</th>
+<th rowspan="2">QFPROM</th>
+<th colspan="6">Power/Thermal</th>
+<th colspan="2">SRAM</th>
+<th colspan="3">Debug</th>
+<th rowspan="2">Platform</th>
+</tr>
+<tr>
+<th>GCC</th>
+<th>RPM(h)CC</th>
+<th>TCSRCC</th>
+<th>NAND</th>
+<th>SATA</th>
+<th>UFS</th>
+<th>UFS ICE</th>
+<th>SD/eMMC</th>
+<th>eMMC ICE</th>
+<th>CPUfreq (DVFS)</th>
+<th>CPUidle</th>
+<th>Cache Topology</th>
+<th>L3 Cache Controller</th>
+<th>SMP</th>
+<th>LLCC Scaling</th>
+<th>DDRfreq</th>
+<th>bwmon(s)</th>
+<th>ADSP</th>
+<th>CDSP</th>
+<th>SDSP/SLPI</th>
+<th>MDSP</th>
+<th>FastRPC/compute</th>
+<th>Bluetooth</th>
+<th>WLAN</th>
+<th>IPA</th>
+<th>Ethernet</th>
+<th>Headset Buttons</th>
+<th>Analog Codec</th>
+<th>LPASS Digital Codecs</th>
+<th>DMIC</th>
+<th>I2S</th>
+<th>SPDIF</th>
+<th>Soundwire</th>
+<th>SlimBus</th>
+<th>LPASS LPI pinctrl</th>
+<th>ADSP (Elite)</th>
+<th>ADSP (AudioReach)</th>
+<th>Host Mode</th>
+<th>Peripheral Mode</th>
+<th>USB OTG</th>
+<th>USB Type-C</th>
+<th>USB4</th>
+<th>DSI</th>
+<th>HDMI</th>
+<th>HDMI Audio</th>
+<th>HDMI CEC</th>
+<th>LVDS</th>
+<th>DisplayPort</th>
+<th>GPU</th>
+<th>CSI</th>
+<th>Data Path</th>
+<th>I2C CCI</th>
+<th>VFE</th>
+<th>VFE Lite</th>
+<th>SFE</th>
+<th>EVA</th>
+<th>Venus</th>
+<th>QCrypto</th>
+<th>RNG</th>
+<th>GPI</th>
+<th>BAM</th>
+<th>current-limit</th>
+<th>MPM</th>
+<th>PDC</th>
+<th>SPM</th>
+<th>tsens</th>
+<th>LMH</th>
+<th>RPM(h) stats</th>
+<th>IMEM</th>
+<th>Coresight</th>
+<th>DCC</th>
+<th>EUD</th>
+</tr>
+
+</tfoot>
+</table>
+</div>
+
+<div>
+<h2>PMIC Status</h2>
+<table>
+<thead>
+
+
+<tr>
+<th rowspan="2">Platform</th>
+<th rowspan="2">GPIO</th>
+<th rowspan="2">MPP</th>
+<th rowspan="2">Regulators</th>
+<th colspan="6">ADC</th>
+<th rowspan="2">temp-alarm</th>
+<th rowspan="2">PON</th>
+<th rowspan="2">Reset key</th>
+<th rowspan="2">RTC</th>
+<th rowspan="2">Watchdog</th>
+<th rowspan="2">LPG/PWM</th>
+<th rowspan="2">WLED (backlight)</th>
+<th rowspan="2">Flash LED</th>
+<th colspan="2">USB</th>
+<th rowspan="2">Coincell</th>
+<th rowspan="2">Fuelgauge/Charging</th>
+<th rowspan="2">Haptics</th>
+<th rowspan="2">LABIB</th>
+<th rowspan="2">Audio Codec</th>
+<th rowspan="2">QNovo</th>
+<th rowspan="2">BMS</th>
+<th rowspan="2">clkdiv</th>
+<th rowspan="2">eUSB2 Repeater</th>
+<th rowspan="2">Matrix keypad</th>
+<th rowspan="2">Platform</th>
+</tr>
+<tr>
+<th>GPADC</th>
+<th>RRADC</th>
+<th>Thermal</th>
+<th>Touch</th>
+<th>IADC</th>
+<th>VADC</th>
+<th>OTG</th>
+<th>Type-C/PD</th>
+</tr>
+
+</thead>
+<tbody>
+
+<tr>
+<td><a href="/mainline-status/pmic/pm3001a">PM3001A</a></td>
+
+
+<td class="status-NA">N/A</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-unknown"></td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-NA">N/A</td>
+
+
+<td><a href="/mainline-status/pmic/pm3001a">PM3001A</a></td>
+</tr>
+
+<tr>
+<td><a href="/mainline-status/pmic/pm4125">PM4125</a></td>
+
+
+<td class="status-Y">6.4</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-Y">5.16</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-N">N</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-N">N</td>
+
+<td class="status-N">N</td>
+
+<td class="status-Y">6.4</td>
+
+<td class="status-Y">6.4</td>
+
+<td class="status-Y">6.4</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-N">N</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-Y">6.9</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-N">N</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-N">N</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-N">N</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-NA">N/A</td>
+
+
+<td><a href="/mainline-status/pmic/pm4125">PM4125</a></td>
+</tr>
+
+<tr>
+<td><a href="/mainline-status/pmic/pm4450">PM4450</a></td>
+
+
+<td class="status-unknown"></td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-unknown"></td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-unknown"></td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-unknown"></td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-NA">N/A</td>
+
+
+<td><a href="/mainline-status/pmic/pm4450">PM4450</a></td>
+</tr>
+
+<tr>
+<td><a href="/mainline-status/pmic/pm4450c">PM4450C</a></td>
+
+
+<td class="status-unknown"></td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-unknown"></td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-unknown"></td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-NA">N/A</td>
+
+
+<td><a href="/mainline-status/pmic/pm4450c">PM4450C</a></td>
+</tr>
+
+<tr>
+<td><a href="/mainline-status/pmic/pm6150l">PM6150L</a></td>
+
+
+<td class="status-Y">5.6</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-Y">5.5</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-Y">5.11</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-Y">5.11</td>
+
+<td class="status-Y">6.2</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-Y">6.1</td>
+
+<td class="status-Y">5.18</td>
+
+<td class="status-Y">6.3</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-unknown"></td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-NA">N/A</td>
+
+
+<td><a href="/mainline-status/pmic/pm6150l">PM6150L</a></td>
+</tr>
+
+<tr>
+<td><a href="/mainline-status/pmic/pm6350">PM6350</a></td>
+
+
+<td class="status-Y">5.16</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-Y">5.16</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-Y">6.2</td>
+
+<td class="status-Y">5.16</td>
+
+<td class="status-Y">5.16</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-unknown"></td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-unknown"></td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-NA">N/A</td>
+
+
+<td><a href="/mainline-status/pmic/pm6350">PM6350</a></td>
+</tr>
+
+<tr>
+<td><a href="/mainline-status/pmic/pm7250b">PM7250B</a></td>
+
+
+<td class="status-Y">6.6</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-Y">6.1</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-Y">6.1</td>
+
+<td class="status-Y">6.1</td>
+
+<td class="status-unknown"></td>
+
+<td class="status-unknown"></td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-Y">6.11</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-unknown"></td>
+
+<td class="status-unknown"></td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-unknown"></td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-NA">N/A</td>
+
+
+<td><a href="/mainline-status/pmic/pm7250b">PM7250B</a></td>
+</tr>
+
+<tr>
+<td><a href="/mainline-status/pmic/pm7550ba">PM7550BA</a></td>
+
+
+<td class="status-Y">6.6</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-N">N</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-N">N</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-next">WIP</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-N">N</td>
+
+<td class="status-N">N</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-Y">6.8</td>
+
+<td class="status-NA">N/A</td>
+
+
+<td><a href="/mainline-status/pmic/pm7550ba">PM7550BA</a></td>
+</tr>
+
+<tr>
+<td><a href="/mainline-status/pmic/pm8005">PM8005</a></td>
+
+
+<td class="status-Y">4.19</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-Y">5.3 / 4.19</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-NA">N/A</td>
+
+
+<td><a href="/mainline-status/pmic/pm8005">PM8005</a></td>
+</tr>
+
+<tr>
+<td><a href="/mainline-status/pmic/pm8009">PM8009</a></td>
+
+
+<td class="status-Y">5.9</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-Y">5.4</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-Y">5.9</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-NA">N/A</td>
+
+
+<td><a href="/mainline-status/pmic/pm8009">PM8009</a></td>
+</tr>
+
+<tr>
+<td><a href="/mainline-status/pmic/pm8010">PM8010</a></td>
+
+
+<td class="status-NA">N/A</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-N">N</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-Y">6.3</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-NA">N/A</td>
+
+
+<td><a href="/mainline-status/pmic/pm8010">PM8010</a></td>
+</tr>
+
+<tr>
+<td><a href="/mainline-status/pmic/pm8150">PM8150</a></td>
+
+
+<td class="status-Y">5.4</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-Y">5.4</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-Y">5.12</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-Y">5.4</td>
+
+<td class="status-Y">5.9</td>
+
+<td class="status-Y">5.4</td>
+
+<td class="status-Y">5.14</td>
+
+<td class="status-Y">5.4</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-N">N</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-NA">N/A</td>
+
+
+<td><a href="/mainline-status/pmic/pm8150">PM8150</a></td>
+</tr>
+
+<tr>
+<td><a href="/mainline-status/pmic/pm8150b">PM8150B</a></td>
+
+
+<td class="status-Y">5.4</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-Y">5.12</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-Y">5.4</td>
+
+<td class="status-Y">5.9</td>
+
+<td class="status-Y">5.4</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-Y">6.0</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-Y">5.14</td>
+
+<td class="status-Y">6.7</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-N">N</td>
+
+<td class="status-N">N</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-N">N</td>
+
+<td class="status-N">N</td>
+
+<td class="status-N">N</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-NA">N/A</td>
+
+
+<td><a href="/mainline-status/pmic/pm8150b">PM8150B</a></td>
+</tr>
+
+<tr>
+<td><a href="/mainline-status/pmic/pm8150l">PM8150L</a></td>
+
+
+<td class="status-Y">5.4</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-Y">5.4</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-Y">5.12</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-Y">5.4</td>
+
+<td class="status-Y">5.9</td>
+
+<td class="status-Y">5.4</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-Y">6.0</td>
+
+<td class="status-Y">6.7</td>
+
+<td class="status-Y">6.4</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-N">N</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-N">N</td>
+
+<td class="status-N">N</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-NA">N/A</td>
+
+
+<td><a href="/mainline-status/pmic/pm8150l">PM8150L</a></td>
+</tr>
+
+<tr>
+<td><a href="/mainline-status/pmic/pm8226">PM8226</a></td>
+
+
+<td class="status-Y">6.2</td>
+
+<td class="status-Y">5.18</td>
+
+<td class="status-Y">5.14</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-N">N</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-Y">6.3</td>
+
+<td class="status-Y">5.19</td>
+
+<td class="status-Y">6.5</td>
+
+<td class="status-Y">6.3</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-Y">5.19</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-N">N</td>
+
+<td class="status-N">N</td>
+
+<td class="status-N">N</td>
+
+<td class="status-Y">5.18</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-N">N
+	<span class="tooltip">(*)<span class="tooltiptext">Charger (SMBB) since 5.18</span></span></td>
+
+<td class="status-Y">5.18</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-N">N</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-NA">N/A</td>
+
+
+<td><a href="/mainline-status/pmic/pm8226">PM8226</a></td>
+</tr>
+
+<tr>
+<td><a href="/mainline-status/pmic/pm8350">PM8350</a></td>
+
+
+<td class="status-Y">5.19</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-Y">5.12</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-Y">5.18</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-NA">N/A</td>
+
+
+<td><a href="/mainline-status/pmic/pm8350">PM8350</a></td>
+</tr>
+
+<tr>
+<td><a href="/mainline-status/pmic/pm8350b">PM8350B</a></td>
+
+
+<td class="status-Y">5.19</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-Y">5.18</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-N">N</td>
+
+<td class="status-N">N</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-N">N</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-NA">N/A</td>
+
+
+<td><a href="/mainline-status/pmic/pm8350b">PM8350B</a></td>
+</tr>
+
+<tr>
+<td><a href="/mainline-status/pmic/pm8350c">PM8350C</a></td>
+
+
+<td class="status-Y">5.13</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-Y">5.11</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-Y">5.13</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-N">N</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-Y">6.7</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-N">N</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-NA">N/A</td>
+
+
+<td><a href="/mainline-status/pmic/pm8350c">PM8350C</a></td>
+</tr>
+
+<tr>
+<td><a href="/mainline-status/pmic/pm8450">PM8450</a></td>
+
+
+<td class="status-Y">5.18</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-Y">5.17</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-Y">5.18</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-NA">N/A</td>
+
+
+<td><a href="/mainline-status/pmic/pm8450">PM8450</a></td>
+</tr>
+
+<tr>
+<td><a href="/mainline-status/pmic/pm8550">PM8550</a></td>
+
+
+<td class="status-Y">6.3</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-Y">6.3</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-Y">6.3</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-Y">6.5</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-Y">6.5</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-N">N</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-NA">N/A</td>
+
+
+<td><a href="/mainline-status/pmic/pm8550">PM8550</a></td>
+</tr>
+
+<tr>
+<td><a href="/mainline-status/pmic/pm8550b">PM8550B</a></td>
+
+
+<td class="status-Y">6.3</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-Y">6.3</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-N">N</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-N">N</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-Y">6.3</td>
+
+<td class="status-NA">N/A</td>
+
+
+<td><a href="/mainline-status/pmic/pm8550b">PM8550B</a></td>
+</tr>
+
+<tr>
+<td><a href="/mainline-status/pmic/pm8550ve">PM8550VE</a></td>
+
+
+<td class="status-Y">6.3</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-Y">6.3</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-Y">6.3</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-NA">N/A</td>
+
+
+<td><a href="/mainline-status/pmic/pm8550ve">PM8550VE</a></td>
+</tr>
+
+<tr>
+<td><a href="/mainline-status/pmic/pm8550vs">PM8550VS</a></td>
+
+
+<td class="status-Y">6.3</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-Y">6.3</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-Y">6.3</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-NA">N/A</td>
+
+
+<td><a href="/mainline-status/pmic/pm8550vs">PM8550VS</a></td>
+</tr>
+
+<tr>
+<td><a href="/mainline-status/pmic/pm8821">PM8821</a></td>
+
+
+<td class="status-NA">N/A</td>
+
+<td class="status-Y">4.11</td>
+
+<td class="status-N">N
+	<span class="tooltip">(*)<span class="tooltiptext">controlled through SAW2</span></span></td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-N">N</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-NA">N/A</td>
+
+
+<td><a href="/mainline-status/pmic/pm8821">PM8821</a></td>
+</tr>
+
+<tr>
+<td><a href="/mainline-status/pmic/pm8841">PM8841</a></td>
+
+
+<td class="status-NA">N/A</td>
+
+<td class="status-Y">4.2</td>
+
+<td class="status-Y">4.3</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-Y">4.2</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-NA">N/A</td>
+
+
+<td><a href="/mainline-status/pmic/pm8841">PM8841</a></td>
+</tr>
+
+<tr>
+<td><a href="/mainline-status/pmic/pm8916">PM8916</a></td>
+
+
+<td class="status-Y">4.2</td>
+
+<td class="status-Y">4.2</td>
+
+<td class="status-Y">4.2</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-N">N</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-Y">4.2</td>
+
+<td class="status-Y">4.2</td>
+
+<td class="status-Y">4.2</td>
+
+<td class="status-Y">5.1</td>
+
+<td class="status-Y">4.2</td>
+
+<td class="status-Y">5.1</td>
+
+<td class="status-Y">6.0</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-Y">5.16</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-Y">6.8</td>
+
+<td class="status-Y">5.6</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-Y">4.1</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-Y">6.8</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-NA">N/A</td>
+
+
+<td><a href="/mainline-status/pmic/pm8916">PM8916</a></td>
+</tr>
+
+<tr>
+<td><a href="/mainline-status/pmic/pm8921">PM8921</a></td>
+
+
+<td class="status-Y">4.3</td>
+
+<td class="status-Y">4.3</td>
+
+<td class="status-Y">4.2</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-Y">4.17</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-Y">4.12 / 4.17</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-Y">3.0 / 4.4</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-Y">3.1 / 4.4</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-N">N</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-N">N</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-N">N</td>
+
+<td class="status-N">N</td>
+
+<td class="status-Y">6.18</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-Y">3.0</td>
+
+
+<td><a href="/mainline-status/pmic/pm8921">PM8921</a></td>
+</tr>
+
+<tr>
+<td><a href="/mainline-status/pmic/pm8941">PM8941</a></td>
+
+
+<td class="status-Y">4.2</td>
+
+<td class="status-Y">4.2</td>
+
+<td class="status-Y">4.3</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-N">N</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-Y">4.2</td>
+
+<td class="status-Y">4.2</td>
+
+<td class="status-Y">4.2</td>
+
+<td class="status-Y">4.2</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-Y">4.2</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-Y">6.0</td>
+
+<td class="status-Y">4.2</td>
+
+<td class="status-N">N</td>
+
+<td class="status-Y">4.13</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-Y">4.3</td>
+
+<td class="status-N">N
+	<span class="tooltip">(*)<span class="tooltiptext">Charger (SMBB) since 4.4</span></span></td>
+
+<td class="status-Y">6.3</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-N">N</td>
+
+<td class="status-N">N</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-NA">N/A</td>
+
+
+<td><a href="/mainline-status/pmic/pm8941">PM8941</a></td>
+</tr>
+
+<tr>
+<td><a href="/mainline-status/pmic/pm8953">PM8953</a></td>
+
+
+<td class="status-Y">6.5</td>
+
+<td class="status-N">N</td>
+
+<td class="status-Y">5.1</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-N">N</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-Y">5.18</td>
+
+<td class="status-Y">5.18</td>
+
+<td class="status-Y">5.18</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-Y">5.18</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-N">N</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-N">N</td>
+
+<td class="status-N">N</td>
+
+<td class="status-N">N</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-NA">N/A</td>
+
+
+<td><a href="/mainline-status/pmic/pm8953">PM8953</a></td>
+</tr>
+
+<tr>
+<td><a href="/mainline-status/pmic/pm8994">PM8994/96</a></td>
+
+
+<td class="status-Y">4.6</td>
+
+<td class="status-Y">4.6</td>
+
+<td class="status-Y">4.10 / 5.6</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-N">N</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-Y">5.11</td>
+
+<td class="status-Y">5.11</td>
+
+<td class="status-Y">4.2</td>
+
+<td class="status-Y">5.14</td>
+
+<td class="status-Y">4.12</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-Y">6.0</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-N">N</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-NA">N/A</td>
+
+
+<td><a href="/mainline-status/pmic/pm8994">PM8994/96</a></td>
+</tr>
+
+<tr>
+<td><a href="/mainline-status/pmic/pm8998">PM8998</a></td>
+
+
+<td class="status-Y">4.19</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-Y">4.17 / 4.19</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-Y">5.17</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-Y">4.2</td>
+
+<td class="status-Y">4.2</td>
+
+<td class="status-Y">4.2</td>
+
+<td class="status-Y">6.2</td>
+
+<td class="status-Y">4.2</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-Y">6.5</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-Y">4.2</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-NA">N/A</td>
+
+
+<td><a href="/mainline-status/pmic/pm8998">PM8998</a></td>
+</tr>
+
+<tr>
+<td><a href="/mainline-status/pmic/pmc8380">PMC8380</a></td>
+
+
+<td class="status-next">WIP</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-next">WIP</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-N">N</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-N">N</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-N">N</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-N">N</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-NA">N/A</td>
+
+
+<td><a href="/mainline-status/pmic/pmc8380">PMC8380</a></td>
+</tr>
+
+<tr>
+<td><a href="/mainline-status/pmic/pmg1110">PMG1110</a></td>
+
+
+<td class="status-unknown"></td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-unknown"></td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-NA">N/A</td>
+
+
+<td><a href="/mainline-status/pmic/pmg1110">PMG1110</a></td>
+</tr>
+
+<tr>
+<td><a href="/mainline-status/pmic/pmi632">PMI632</a></td>
+
+
+<td class="status-Y">6.5</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-Y">6.1</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-Y">6.5</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-Y">6.5</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-Y">6.5</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-N">N</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-Y">6.9</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-N">N</td>
+
+<td class="status-Y">6.11</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-N">N</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-NA">N/A</td>
+
+
+<td><a href="/mainline-status/pmic/pmi632">PMI632</a></td>
+</tr>
+
+<tr>
+<td><a href="/mainline-status/pmic/pmi8950">PMI8950</a></td>
+
+
+<td class="status-Y">6.2</td>
+
+<td class="status-Y">6.2</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-Y">6.2</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-N">N</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-Y">6.11</td>
+
+<td class="status-Y">6.2</td>
+
+<td class="status-N">N</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-N">N</td>
+
+<td class="status-N">N</td>
+
+<td class="status-Y">6.14</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-N">N</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-NA">N/A</td>
+
+
+<td><a href="/mainline-status/pmic/pmi8950">PMI8950</a></td>
+</tr>
+
+<tr>
+<td><a href="/mainline-status/pmic/pmi8994">PMI8994/96</a></td>
+
+
+<td class="status-Y">4.14</td>
+
+<td class="status-Y">6.0</td>
+
+<td class="status-Y">4.15 / 5.8</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-N">N</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-N">N</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-Y">6.0</td>
+
+<td class="status-Y">5.14</td>
+
+<td class="status-N">N</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-N">N</td>
+
+<td class="status-N">N</td>
+
+<td class="status-N">N</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-N">N</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-NA">N/A</td>
+
+
+<td><a href="/mainline-status/pmic/pmi8994">PMI8994/96</a></td>
+</tr>
+
+<tr>
+<td><a href="/mainline-status/pmic/pmi8998">PMI8998</a></td>
+
+
+<td class="status-Y">4.2</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-Y">4.17 / 4.19</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-Y">6.2</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-N">N</td>
+
+<td class="status-N">N</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-Y">6.0</td>
+
+<td class="status-Y">5.16</td>
+
+<td class="status-Y">6.5</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-N">N</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-Y">6.5</td>
+
+<td class="status-N">N</td>
+
+<td class="status-Y">5.9</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-N">N</td>
+
+<td class="status-N">N</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-NA">N/A</td>
+
+
+<td><a href="/mainline-status/pmic/pmi8998">PMI8998</a></td>
+</tr>
+
+<tr>
+<td><a href="/mainline-status/pmic/pmk8350">PMK8350</a></td>
+
+
+<td class="status-Y">5.13</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-N">N</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-N">N</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-Y">6.2</td>
+
+<td class="status-N">N</td>
+
+<td class="status-Y">5.13</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-NA">N/A</td>
+
+
+<td><a href="/mainline-status/pmic/pmk8350">PMK8350</a></td>
+</tr>
+
+<tr>
+<td><a href="/mainline-status/pmic/pmk8550">PMK8550</a></td>
+
+
+<td class="status-Y">6.3</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-N">N</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-Y">6.3</td>
+
+<td class="status-N">N</td>
+
+<td class="status-Y">6.3</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-NA">N/A</td>
+
+
+<td><a href="/mainline-status/pmic/pmk8550">PMK8550</a></td>
+</tr>
+
+<tr>
+<td><a href="/mainline-status/pmic/pmm8654au">PMM8654AU</a></td>
+
+
+<td class="status-Y">6.4</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-Y">6.4</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-Y">6.4</td>
+
+<td class="status-Y">6.4</td>
+
+<td class="status-Y">6.4</td>
+
+<td class="status-Y">6.3</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-NA">N/A</td>
+
+
+<td><a href="/mainline-status/pmic/pmm8654au">PMM8654AU</a></td>
+</tr>
+
+<tr>
+<td><a href="/mainline-status/pmic/pmr735a">PMR735A</a></td>
+
+
+<td class="status-Y">5.13</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-Y">5.16</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-Y">5.13</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-NA">N/A</td>
+
+
+<td><a href="/mainline-status/pmic/pmr735a">PMR735A</a></td>
+</tr>
+
+<tr>
+<td><a href="/mainline-status/pmic/pmr735b">PMR735B</a></td>
+
+
+<td class="status-Y">5.19</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-N">N</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-Y">5.18</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-NA">N/A</td>
+
+
+<td><a href="/mainline-status/pmic/pmr735b">PMR735B</a></td>
+</tr>
+
+<tr>
+<td><a href="/mainline-status/pmic/pmr735d">PMR735D</a></td>
+
+
+<td class="status-Y">6.3</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-Y">6.3</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-NA">N/A</td>
+
+
+<td><a href="/mainline-status/pmic/pmr735d">PMR735D</a></td>
+</tr>
+
+<tr>
+<td><a href="/mainline-status/pmic/pmx75">PMX75</a></td>
+
+
+<td class="status-Y">6.6</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-N">N</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-N">N</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-NA">N/A</td>
+
+
+<td><a href="/mainline-status/pmic/pmx75">PMX75</a></td>
+</tr>
+
+<tr>
+<td><a href="/mainline-status/pmic/smb2360">SMB2360</a></td>
+
+
+<td class="status-next">WIP</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-N">N</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-N">N</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-N">N</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-NA">N/A</td>
+
+<td class="status-N">N</td>
+
+<td class="status-NA">N/A</td>
+
+
+<td><a href="/mainline-status/pmic/smb2360">SMB2360</a></td>
+</tr>
+
+</tbody>
+</table>
+</div>
+</div>
+
+      </div>
+    </main><footer class="site-footer h-card">
+  <data class="u-url" href="/mainline-status/"></data>
+
+  <div class="wrapper">
+
+    <h2 class="footer-heading">Qualcomm mainline status</h2>
+
+    <div class="footer-col-wrapper">
+      <div class="footer-col footer-col-1">
+        <ul class="contact-list">
+          <li class="p-name">Qualcomm mainline status</li><li><a class="u-email" href="mailto:linux-arm-msm@vger.kernel.org">linux-arm-msm@vger.kernel.org</a></li></ul>
+      </div>
+
+      <div class="footer-col footer-col-2"><ul class="social-media-list"><li><a href="https://github.com/linux-msm"><svg class="svg-icon"><use xlink:href="/mainline-status/assets/minima-social-icons.svg#github"></use></svg> <span class="username">linux-msm</span></a></li></ul>
+</div>
+
+      <div class="footer-col footer-col-3">
+        <p>Track the upstream status of Qualcomm platforms support</p>
+      </div>
+    </div>
+
+  </div>
+
+</footer>
+</body>
+
+</html>

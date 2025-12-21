@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.10.0">Jekyll</generator><link href="/mainline-status/feed/soc.xml" rel="self" type="application/atom+xml" /><link href="/mainline-status/" rel="alternate" type="text/html" /><updated>2025-12-21T03:31:50+00:00</updated><id>/mainline-status/feed/soc.xml</id><title type="html">Qualcomm mainline status | Soc</title><subtitle>Track the upstream status of Qualcomm platforms support</subtitle><entry><title type="html">Talos</title><link href="/mainline-status/soc/talos" rel="alternate" type="text/html" title="Talos" /><published>2025-12-21T03:31:50+00:00</published><updated>2025-12-21T03:31:50+00:00</updated><id>/mainline-status/soc/talos</id><content type="html" xml:base="/mainline-status/soc/talos"><![CDATA[<p>Tested Boards:</p>
+<ul>
+  <li>QCS615-RIDE</li>
+</ul>]]></content><author><name></name></author><summary type="html"><![CDATA[Tested Boards: QCS615-RIDE]]></summary></entry><entry><title type="html">Sm8750</title><link href="/mainline-status/soc/sm8750" rel="alternate" type="text/html" title="Sm8750" /><published>2025-12-21T03:31:50+00:00</published><updated>2025-12-21T03:31:50+00:00</updated><id>/mainline-status/soc/sm8750</id><content type="html" xml:base="/mainline-status/soc/sm8750"><![CDATA[<p>Tested Boards:</p>
+<ul>
+  <li>SM8750-MTP</li>
+</ul>]]></content><author><name></name></author><summary type="html"><![CDATA[Tested Boards: SM8750-MTP]]></summary></entry><entry><title type="html">Sm8650</title><link href="/mainline-status/soc/sm8650" rel="alternate" type="text/html" title="Sm8650" /><published>2025-12-21T03:31:50+00:00</published><updated>2025-12-21T03:31:50+00:00</updated><id>/mainline-status/soc/sm8650</id><content type="html" xml:base="/mainline-status/soc/sm8650"><![CDATA[<p>Tested Boards:</p>
+<ul>
+  <li>SM8650-MTP</li>
+  <li>SM8650-QRD</li>
+  <li>SM8650-HDK</li>
+</ul>]]></content><author><name></name></author><summary type="html"><![CDATA[Tested Boards: SM8650-MTP SM8650-QRD SM8650-HDK]]></summary></entry><entry><title type="html">Sm8550</title><link href="/mainline-status/soc/sm8550" rel="alternate" type="text/html" title="Sm8550" /><published>2025-12-21T03:31:50+00:00</published><updated>2025-12-21T03:31:50+00:00</updated><id>/mainline-status/soc/sm8550</id><content type="html" xml:base="/mainline-status/soc/sm8550"><![CDATA[<p>Tested Boards:</p>
+<ul>
+  <li>SM8550-MTP</li>
+  <li>SM8550-QRD</li>
+  <li>SM8550-HDK</li>
+  <li>Samsung Galaxy Z Fold5</li>
+  <li>Sony Xperia 1 V</li>
+</ul>]]></content><author><name></name></author><summary type="html"><![CDATA[Tested Boards: SM8550-MTP SM8550-QRD SM8550-HDK Samsung Galaxy Z Fold5 Sony Xperia 1 V]]></summary></entry><entry><title type="html">Sm8450</title><link href="/mainline-status/soc/sm8450" rel="alternate" type="text/html" title="Sm8450" /><published>2025-12-21T03:31:50+00:00</published><updated>2025-12-21T03:31:50+00:00</updated><id>/mainline-status/soc/sm8450</id><content type="html" xml:base="/mainline-status/soc/sm8450"><![CDATA[<p>Tested Boards:</p>
+<ul>
+  <li>SM8450-HDK</li>
+  <li>SM8450-QRD</li>
+</ul>]]></content><author><name></name></author><summary type="html"><![CDATA[Tested Boards: SM8450-HDK SM8450-QRD]]></summary></entry><entry><title type="html">Sm8350</title><link href="/mainline-status/soc/sm8350" rel="alternate" type="text/html" title="Sm8350" /><published>2025-12-21T03:31:50+00:00</published><updated>2025-12-21T03:31:50+00:00</updated><id>/mainline-status/soc/sm8350</id><content type="html" xml:base="/mainline-status/soc/sm8350"><![CDATA[<p>Tested Boards:</p>
+<ul>
+  <li>HDK888 aka SM8350-HDK</li>
+</ul>]]></content><author><name></name></author><summary type="html"><![CDATA[Tested Boards: HDK888 aka SM8350-HDK]]></summary></entry><entry><title type="html">Sm8250</title><link href="/mainline-status/soc/sm8250" rel="alternate" type="text/html" title="Sm8250" /><published>2025-12-21T03:31:50+00:00</published><updated>2025-12-21T03:31:50+00:00</updated><id>/mainline-status/soc/sm8250</id><content type="html" xml:base="/mainline-status/soc/sm8250"><![CDATA[<p>Tested Boards:</p>
+<ul>
+  <li>Qualcomm / Thundercomm RB5</li>
+</ul>]]></content><author><name></name></author><summary type="html"><![CDATA[Tested Boards: Qualcomm / Thundercomm RB5]]></summary></entry><entry><title type="html">Sm8150</title><link href="/mainline-status/soc/sm8150" rel="alternate" type="text/html" title="Sm8150" /><published>2025-12-21T03:31:50+00:00</published><updated>2025-12-21T03:31:50+00:00</updated><id>/mainline-status/soc/sm8150</id><content type="html" xml:base="/mainline-status/soc/sm8150"><![CDATA[]]></content><author><name></name></author><summary type="html"><![CDATA[]]></summary></entry><entry><title type="html">Sm6350</title><link href="/mainline-status/soc/sm6350" rel="alternate" type="text/html" title="Sm6350" /><published>2025-12-21T03:31:50+00:00</published><updated>2025-12-21T03:31:50+00:00</updated><id>/mainline-status/soc/sm6350</id><content type="html" xml:base="/mainline-status/soc/sm6350"><![CDATA[]]></content><author><name></name></author><summary type="html"><![CDATA[]]></summary></entry><entry><title type="html">Sm4450</title><link href="/mainline-status/soc/sm4450" rel="alternate" type="text/html" title="Sm4450" /><published>2025-12-21T03:31:50+00:00</published><updated>2025-12-21T03:31:50+00:00</updated><id>/mainline-status/soc/sm4450</id><content type="html" xml:base="/mainline-status/soc/sm4450"><![CDATA[<p>Tested Boards:</p>
+<ul>
+  <li>SM4450-QRD</li>
+</ul>]]></content><author><name></name></author><summary type="html"><![CDATA[Tested Boards: SM4450-QRD]]></summary></entry></feed>
