@@ -70,8 +70,7 @@ status-remoteproc-cdsp: N/A
 status-remoteproc-fastrpc: N/A
 status-remoteproc-mdsp: N/A
 status-remoteproc-sdsp: N/A
-status-mmu-iommu: Working, pending submission
-status-mmu-smmu: N/A
+status-mmu: Working, pending submission
 status-spi: 4.8
 status-spmi: N/A
 status-sram-imem: N/A

@@ -71,8 +71,7 @@ status-remoteproc-cdsp: 6.4
 status-remoteproc-fastrpc: 6.4
 status-remoteproc-mdsp: 6.4
 status-remoteproc-sdsp: N/A
-status-mmu-iommu: N/A
-status-mmu-smmu: 6.2
+status-mmu: 6.2
 status-spi: 6.2
 status-spmi: 6.2
 status-sram-imem: N/A

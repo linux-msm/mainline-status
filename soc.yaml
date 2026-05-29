@@ -36,13 +36,6 @@ pcie:
 mmu:
   name: MMU
   intop: True
-  items:
-    smmu:
-      name: SMMU
-      intop: True
-    iommu:
-      name: IOMMU
-      intop: True
 storage:
   name: Storage
   intop: True
