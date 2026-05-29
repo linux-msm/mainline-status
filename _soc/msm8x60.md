@@ -1,5 +1,6 @@
 ---
-name: MSM8660
+name: MSM8x60
+skus: [APQ8060, MSM8260, MSM8660]
 fullname: Snapdragon S3
 layout: soc
 status-audio-adspaudio: WIP
