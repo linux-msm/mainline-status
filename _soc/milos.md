@@ -78,8 +78,7 @@ status-remoteproc-fastrpc:
 status-remoteproc-mdsp: 6.18
 status-remoteproc-mdsp-comment: DT bits in 7.0
 status-remoteproc-sdsp: N/A
-status-mmu-iommu: N/A
-status-mmu-smmu: 7.0
+status-mmu: 7.0
 status-spi: 7.0
 status-spmi: 7.0
 status-sram-imem:
