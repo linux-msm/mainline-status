@@ -50,6 +50,7 @@ status-display-hdmicec: N/A
 status-display-gpu: 6.10
 status-display-gpu-comment: DT bits in 6.11
 status-display-lvds: N/A
+status-dma-adm: N/A
 status-dma-bam: N
 status-dma-gpi: 6.8
 status-gnss:
@@ -71,7 +72,8 @@ status-remoteproc-cdsp: 6.9
 status-remoteproc-fastrpc: "6.10"
 status-remoteproc-mdsp: N
 status-remoteproc-sdsp: N
-status-smmu: 6.8
+status-mmu-iommu: N/A
+status-mmu-smmu: 6.8
 status-spi: 6.8
 status-spmi: "6.10"
 status-sram-imem:
@@ -90,6 +92,7 @@ status-usb-typec: 6.11
 status-usb-usb4:
 status-usb-usbotg: 6.11
 status-video-venus: N
+status-video-vidc: N/A
 status-watchdog: 6.15
 pmic: pm8550, pm8550ve, pmc8380, smb2360
 ---

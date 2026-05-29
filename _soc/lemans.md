@@ -43,6 +43,7 @@ status-display-hdmi: N/A
 status-display-hdmiaudio: N/A
 status-display-hdmicec: N/A
 status-display-lvds: N/A
+status-dma-adm: N/A
 status-dma-bam: 6.13
 status-dma-gpi: 6.13
 status-gnss: N
@@ -62,7 +63,8 @@ status-remoteproc-cdsp: 6.12
 status-remoteproc-fastrpc: 6.12
 status-remoteproc-mdsp: N/A
 status-remoteproc-sdsp: N/A
-status-smmu: 6.4
+status-mmu-iommu: N/A
+status-mmu-smmu: 6.4
 status-spi: 6.4
 status-spmi: 6.4
 status-sram-imem: 6.11
@@ -77,6 +79,7 @@ status-usb: 6.5
 status-usb-hostmode: 6.5
 status-usb-periphmode: 6.5
 status-video-venus: N
+status-video-vidc: N/A
 status-watchdog: 6.5
 pmic: pmm8654au
 ---

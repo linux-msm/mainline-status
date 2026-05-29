@@ -50,6 +50,7 @@ status-display-hdmiaudio: N/A
 status-display-hdmicec: N/A
 status-display-gpu: 5.16
 status-display-lvds: N/A
+status-dma-adm: N/A
 status-dma-bam:
 status-dma-gpi: 5.19
 status-gnss:
@@ -71,7 +72,8 @@ status-remoteproc-cdsp: 6.8
 status-remoteproc-fastrpc: 6.8
 status-remoteproc-mdsp: 5.16
 status-remoteproc-sdsp:
-status-smmu: 5.13
+status-mmu-iommu: N/A
+status-mmu-smmu: 5.13
 status-spi: 5.16
 status-spmi: 5.13
 status-sram-imem: 5.16
@@ -90,6 +92,7 @@ status-usb-typec: 6.9
 status-usb-usb4:
 status-usb-usbotg: 6.9
 status-video-venus: 5.17
+status-video-vidc: N/A
 status-watchdog: 5.13
 pmic: pm7250b, pm7325, pm8350c, pmk8350, pmr735a
 ---

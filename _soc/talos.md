@@ -48,6 +48,7 @@ status-display-hdmiaudio: N/A
 status-display-hdmicec: N/A
 status-display-gpu: WIP
 status-display-lvds: N/A
+status-dma-adm: N/A
 status-dma-bam: 6.14
 status-dma-gpi: 6.14
 status-gnss: N/A
@@ -69,7 +70,8 @@ status-remoteproc-cdsp: 6.17
 status-remoteproc-fastrpc: 6.18
 status-remoteproc-mdsp: N/A
 status-remoteproc-sdsp: N/A
-status-smmu: 6.14
+status-mmu-iommu: N/A
+status-mmu-smmu: 6.14
 status-spi: 6.14
 status-spmi: 6.14
 status-sram-imem: 6.17
@@ -88,6 +90,7 @@ status-usb-typec: N/A
 status-usb-usb4: N/A
 status-usb-usbotg: WIP
 status-video-venus: 6.18
+status-video-vidc: N/A
 status-watchdog: 6.14
 pmic: pm8150
 ---

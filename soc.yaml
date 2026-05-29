@@ -33,9 +33,16 @@ spi:
 pcie:
   name: PCIe
   intop: True
-smmu:
-  name: SMMU
+mmu:
+  name: MMU
   intop: True
+  items:
+    smmu:
+      name: SMMU
+      intop: True
+    iommu:
+      name: IOMMU
+      intop: True
 storage:
   name: Storage
   intop: True
@@ -201,6 +208,9 @@ video:
     venus:
       name: Venus
       intop: True
+    vidc:
+      name: VIDC
+      intop: True
 watchdog:
   name: Watchdog
   intop: True
@@ -218,6 +228,8 @@ dma:
       name: GPI
     bam:
       name: BAM
+    adm:
+      name: ADM
 qfprom:
   name: QFPROM
 powerthermal:

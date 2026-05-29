@@ -49,6 +49,7 @@ status-display-hdmi: N/A
 status-display-hdmiaudio: N/A
 status-display-hdmicec: N/A
 status-display-lvds: N/A
+status-dma-adm: N/A
 status-dma-bam: N/A
 status-dma-gpi: 6.2
 status-gnss: N/A
@@ -70,7 +71,8 @@ status-remoteproc-cdsp: 6.4
 status-remoteproc-fastrpc: 6.4
 status-remoteproc-mdsp: 6.4
 status-remoteproc-sdsp: N/A
-status-smmu: 6.2
+status-mmu-iommu: N/A
+status-mmu-smmu: 6.2
 status-spi: 6.2
 status-spmi: 6.2
 status-sram-imem: N/A
@@ -89,6 +91,7 @@ status-usb-typec: 6.9
 status-usb-usb4: N/A
 status-usb-usbotg: 6.9
 status-video-venus: N/A
+status-video-vidc: N/A
 status-watchdog: 6.3
 ---
 Tested Boards:

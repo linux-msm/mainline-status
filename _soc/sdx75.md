@@ -47,6 +47,7 @@ status-display-hdmiaudio: N/A
 status-display-hdmicec: N/A
 status-display-kgsl: N/A
 status-display-lvds: N/A
+status-dma-adm: N/A
 status-dma-bam: WIP
 status-dma-gpi: 6.11
 status-gnss: N/A
@@ -68,7 +69,8 @@ status-remoteproc-cdsp: N/A
 status-remoteproc-fastrpc: N/A
 status-remoteproc-mdsp: 6.12
 status-remoteproc-sdsp: N/A
-status-smmu: 6.5
+status-mmu-iommu: N/A
+status-mmu-smmu: 6.5
 status-spi: 6.11
 status-spmi: 6.6
 status-sram-imem: WIP
@@ -87,6 +89,7 @@ status-usb-typec: WIP
 status-usb-usb4: N/A
 status-usb-usbotg: WIP
 status-video-venus: N/A
+status-video-vidc: N/A
 status-watchdog: WIP
 pmic: pm7550ba, pmk8550, pmx75
 ---

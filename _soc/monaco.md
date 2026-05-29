@@ -49,6 +49,7 @@ status-display-hdmi: N/A
 status-display-hdmiaudio: N/A
 status-display-hdmicec: N/A
 status-display-lvds: N/A
+status-dma-adm: N/A
 status-dma-bam:
 status-dma-gpi:
 status-gnss:
@@ -70,7 +71,8 @@ status-remoteproc-cdsp: 6.14
 status-remoteproc-fastrpc: 6.14
 status-remoteproc-mdsp: N/A
 status-remoteproc-sdsp: N/A
-status-smmu: 6.14
+status-mmu-iommu: N/A
+status-mmu-smmu: 6.14
 status-spi:
 status-spmi: 6.16
 status-sram-imem: 6.14
@@ -89,6 +91,7 @@ status-usb-typec: N/A
 status-usb-usb4: N/A
 status-usb-usbotg: N/A
 status-video-venus: 6.16
+status-video-vidc: N/A
 status-video-venus-comment: IRIS Driver
 status-watchdog: 6.14
 pmic:

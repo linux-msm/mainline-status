@@ -52,6 +52,7 @@ status-display-hdmi: N/A
 status-display-hdmiaudio: N/A
 status-display-hdmicec: N/A
 status-display-lvds: N/A
+status-dma-adm: N/A
 status-dma-bam: N/A
 status-dma-gpi: 7.0
 status-gnss:
@@ -77,7 +78,8 @@ status-remoteproc-fastrpc:
 status-remoteproc-mdsp: 6.18
 status-remoteproc-mdsp-comment: DT bits in 7.0
 status-remoteproc-sdsp: N/A
-status-smmu: 7.0
+status-mmu-iommu: N/A
+status-mmu-smmu: 7.0
 status-spi: 7.0
 status-spmi: 7.0
 status-sram-imem:
@@ -98,6 +100,7 @@ status-usb-typec: 7.0
 status-usb-usb4: N/A
 status-usb-usbotg: N/A
 status-video-venus:
+status-video-vidc: N/A
 status-watchdog: N/A
 pmic: pm7550, pm8550vs, pmiv0104, pmk8550, pmr735b
 ---

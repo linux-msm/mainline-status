@@ -50,7 +50,8 @@ status-display-hdmi: N/A
 status-display-hdmiaudio: N/A
 status-display-hdmicec: N/A
 status-display-lvds: N/A
-status-dma-bam:
+status-dma-adm: N/A
+status-dma-bam: N/A
 status-dma-gpi: 6.4
 status-gnss: N/A
 status-i2c: 6.4
@@ -71,7 +72,8 @@ status-remoteproc-cdsp: N/A
 status-remoteproc-fastrpc: N/A
 status-remoteproc-mdsp: 6.4
 status-remoteproc-sdsp: N/A
-status-smmu: 6.4
+status-mmu-iommu: N/A
+status-mmu-smmu: 6.4
 status-spi: 6.4
 status-spmi: 6.4
 status-sram-imem: N/A
@@ -90,6 +92,7 @@ status-usb-typec: 6.10
 status-usb-usb4: N/A
 status-usb-usbotg: 6.10
 status-video-venus: 6.18
+status-video-vidc: N/A
 status-watchdog: 6.4
 pmic: pm4125
 ---
