@@ -11,6 +11,8 @@
   {%- else -%}
     {%- if include.status contains "next" or include.status contains "Next" -%}
       status-next
+    {%- elsif include.status contains "pending" -%}
+      status-next
     {%- elsif include.status contains "no-dts" -%}
       status-no-dts
     {%- else -%}
