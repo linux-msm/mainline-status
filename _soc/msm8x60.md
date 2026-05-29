@@ -71,6 +71,7 @@ status-remoteproc-fastrpc: N/A
 status-remoteproc-mdsp: N/A
 status-remoteproc-sdsp: N/A
 status-mmu: Working, pending submission
+status-mmu-comment: legacy msm_iommu v0
 status-spi: 4.8
 status-spmi: N/A
 status-sram-imem: N/A
